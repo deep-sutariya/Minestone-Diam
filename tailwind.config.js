@@ -7,12 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors:{
+        offwhite:"#F2F0F8",
+        hover: "#E9E9E9",
+        detail:"rgb(75 85 99)",
+        detail2:"#96B6C5",
+        blue: "#3C8CAC",
+        brown: "#C28B7C",
+      },
+      fontFamily: {
+        main: ['Protest Guerrilla', "cursive"],
+        heading: ['Forum', "serif"],
+        special: ['Merienda', "cursive"],
+        basic: ['Tenor Sans', "sans-serif"],
       },
     },
   },
-  plugins: [],
+plugins: [],
 };
