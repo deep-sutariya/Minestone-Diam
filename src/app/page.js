@@ -11,7 +11,7 @@ export default function Home() {
       <div className=" h-[88vh] bg-offwhite w-full flex gap-x-10 overflow-x-clip">
         <div className="w-1/2 px-20 py-24 flex flex-col gap-y-6">
           <div className=" flex flex-col justify-start items-start gap-y-4 font-heading text-black text-5xl">
-            <h1>World's Largest</h1>
+            <h1>World&apos;s Largest</h1>
             <h1>Collection of Diamonds</h1>
             <h1></h1>
           </div>
