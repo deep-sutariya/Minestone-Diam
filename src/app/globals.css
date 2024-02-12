@@ -18,9 +18,70 @@
         transform: translateY(-10px);
     }
 }
+@keyframes menu {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes down {
+    0% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes right-left {
+    0% {
+        transform: translateX(-10%);
+    }
+    100%{
+        transform: translateX(10%);
+    }
+}
+@keyframes left-right {
+    0% {
+        transform: translateX(10%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+
 
 .animate-updown {
     animation: up-down 1.7s ease-in-out infinite alternate-reverse both;
+}
+.animate-updown-1 {
+    animation: up-down 1.7s ease-in-out infinite alternate-reverse both;
+    animation-delay: 850ms;
+}
+.animate-right-left {
+    animation: right-left 3s ease-in-out infinite alternate-reverse both;
+}
+.animate-left-right {
+    animation: left-right 3s ease-in-out infinite alternate-reverse both;
+}
+.animate-menu-0 {
+    animation: menu 0.4s ease-in-out both;
+}
+.animate-menu-1 {
+    animation: menu 0.4s ease-in-out both;
+    animation-delay: 200ms;
+}
+.animate-menu-2 {
+    animation: menu 0.4s ease-in-out both;
+    animation-delay: 400ms;
+}
+.animate-menu-3 {
+    animation: menu 0.4s ease-in-out both;
+    animation-delay: 600ms;
+}
+.animate-down{
+    animation: down 0.6s ease-in-out both;
 }
 
 /* 
