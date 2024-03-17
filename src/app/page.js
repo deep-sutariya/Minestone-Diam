@@ -24,7 +24,7 @@ export default function Home() {
             <Image className='animate-updown rounded-xl drop-shadow-xl object-cover w-80 h-48 md:h-[300px] md:w-[700px]' src='/try2r.png' width={2000} height={2000} />
         </div> */}
         <div className=' absolute top-16 -right-[620px] z-10 w-fit object-cover h-min'>
-            <Image className='rounded-xl drop-shadow-xl w-80 h-48 md:h-[800px] md:w-[1400px]' src='/try2r.png' width={5000} height={5000} alt='Diamond'/>
+            <Image className='rounded-xl drop-shadow-xl w-80 h-48 md:h-[800px] md:w-[1400px]' src='/try2r.png' width={3000} height={3000} alt='Diamond'/>
         </div>
       </div>
 
