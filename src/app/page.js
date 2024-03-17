@@ -7,24 +7,24 @@ import Affiliations from '@/components/Affiliations';
 
 export default function Home() {
   return (
-    <div>
-      <div className=" md:h-[88vh] bg-offwhite w-full flex flex-col md:flex-row gap-x-2 md:gap-x-5 lg:gap-x-10 overflow-x-clip">
-        <div className="md:w-1/2 px-10 lg:px-20 py-16 md:py-24 flex flex-col gap-y-6">
-          <div className=" flex flex-col justify-start items-start gap-y-1 lg:gap-y-4 font-heading text-black text-3xl md:text-5xl">
-            <h1>World&apos;s Largest</h1>
+    <div className=' relative overflow-x-clip' >
+      <div className=" md:h-[100vh] bg-offwhite w-full flex md:flex-row md:gap-x-5 overflow-x-clip pt-44">
+        <div className=" w-2/3 md:w-[56%] px-5 md:px-10 lg:pl-20 lg:pr-0 py-16 md:py-24 flex flex-col gap-y-6">
+          <div className=" flex flex-col justify-start items-start gap-y-1 lg:gap-y-4 font-heading text-black text-3xl md:text-6xl">
+            <h1>Luxuriate in Boldness</h1>
+            <h1>Trust the Brilliance</h1>
+            {/* <h1>World&apos;s Largest</h1>
             <h1>Collection of Diamonds</h1>
-            <h1></h1>
+            <h1></h1> */}
           </div>
-          <p className=" font-basic text-detail text-sm md:text-lg text-justify">The fastest growing B2B Lab-grown diamond marketplace globally, Milestone Diam uses state-of-the-art tech to help lab grown diamond jewellers, retailers and buyers experience growth like never before. A simple & user friendly solution to source the best quality Lab-grown diamonds at the best price, scale up profits, expand business horizons, and grow exponentially.</p>
+          <p className=" w-full font-basic text-detail text-sm md:text-lg lg:text-2xl text-left">We emphasize the peace of mind of owning a diamond-backed by trust and transparency. Minestone Diam uses state-of-the-art tech to help diamond jewellers, retailers and buyers experience growth like never before. A sustainable & user friendly solution to source the best quality diamonds at the best price, scale up profits, expand business horizons, and grow exponentially.</p>
         </div>
 
-        <div className='flex pr-5 md:w-1/2 md:pr-0 w-full justify-center items-center md:gap-x-0'>
-          <div className="md:w-full flex flex-col items-center lg:py-28 xl:py-24 md:py-36 h-full">
-            <Image className='animate-updown rounded-xl drop-shadow-xl w-80 h-48 md:h-80 md:w-[500px]' src='/Home_Img.png' width={500} height={500} />
-          </div>
-          <div className="md:hidden flex flex-col lg:py-32 md:py-60 h-full">
-            <Image className=' animate-updown-1 md:w-full rounded-xl drop-shadow-xl w-80 h-48' src='/Home_Img.png' width={500} height={500} />
-          </div>
+        {/* <div className=' absolute top-10 right-0 md:flex md:pr-0 md:w-1/2 py-20 md:py-32 justify-center md:gap-x-0 h-min'>
+            <Image className='animate-updown rounded-xl drop-shadow-xl object-cover w-80 h-48 md:h-[300px] md:w-[700px]' src='/try2r.png' width={2000} height={2000} />
+        </div> */}
+        <div className=' absolute top-16 -right-[620px] z-10 w-fit object-cover h-min'>
+            <Image className='rounded-xl drop-shadow-xl w-80 h-48 md:h-[800px] md:w-[1400px]' src='/try2r.png' width={5000} height={5000} alt='Diamond'/>
         </div>
       </div>
 
