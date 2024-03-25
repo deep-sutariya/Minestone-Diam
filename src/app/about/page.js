@@ -1,15 +1,11 @@
 "use client";
 
+import { motion } from "framer-motion";
 import AboutusComponents from "@/components/AboutusComponents";
-import FadeFragment from "@/components/Animations/FadeFragment";
-import TranslateFragment from "@/components/Animations/TranslateFragment";
-import DiamShape from "@/components/DiamShape";
-
-import { motion, useScroll } from "framer-motion";
-import { useEffect } from "react";
+import ScrollHook from "@/utils/ScrollHook";
 
 const page = () => {
-  const { scrollYProgress } = useScroll();
+  const scrollYProgress = ScrollHook();
 
   return (
     <div>
@@ -34,20 +30,6 @@ const page = () => {
           </p>
         </div>
       </div>
-
-      {/* <DiamShape /> */}
-
-      {/* <motion.div className=" relative overflow-y-scroll">
-        <div className=" absolute top-10 left-10 ">
-          <div className=" relative border-r-4 border-black h-screen">
-            <div className="absolute top-0 -left-5 p-4 rounded-lg bg-blue h-10 w-10"></div>
-          </div>
-        </div>
-
-        <AboutusComponents />
-        <AboutusComponents />
-        <AboutusComponents />
-      </motion.div> */}
     
       <div className=" relative">
         <motion.div
