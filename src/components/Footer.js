@@ -1,44 +1,73 @@
-import React from 'react';
+import React from "react";
 import Link from "next/link";
 
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 const Footer = () => {
-    return (
-        <footer className=" bg-offwhite text-detail py-10 px-5 sm:px-8 md:py-12 lg:py-16 md:px-6 lg:px-20">
-            <div className="mx-auto flex flex-wrap gap-y-4 md:gap-y-0 justify-between">
-                <div className=' flex sm:gap-x-16'>
-                    <div className="w-full md:w-1/3 px-4 mb-4 md:mb-0">
-                        <h2 className="text-xl font-semibold mb-2 text-black">Our Company</h2>
-                        <ul className="list-none cursor-pointer">
-                            <Link href="/about"><li>About Us</li></Link>
-                            <Link href="/work"><li>Our Work</li></Link>
-                            <Link href="/whyus"><li>Why Us?</li></Link>
-                            <Link href="/contact"><li>Contact Us</li></Link>
-                        </ul>
-                    </div>
-                    <div className="w-full md:w-1/3 px-4 mb-4 md:mb-0">
-                        <h2 className="text-xl font-semibold mb-2 text-black">Our Policies</h2>
-                        <ul className="list-none">
-                            <Link href="/privacy-policy"><li>Privacy Policy</li></Link>
-                            <Link href="/terms-conditions"><li>Terms & Conditions</li></Link>
-                            <Link href="/code-of-conduct"><li>Code of Conduct</li></Link>
-                        </ul>
-                    </div>
-                </div>
-                <div className="w-full md:w-1/3 px-4">
-                    <p className=" text-black text-xl font-semibold mb-2">
-                        We offer periodic updates about our research and development. Be among the select first few to receive all such news & more!
-                    </p>
-                    <div className="mt-4 text-black">
-                        <p className='  text-xl font-semibold mb-2'>Subscribe to Newsletter</p>
-                        <div className="flex mt-2">
-                            <input type="email" placeholder="Enter your Email Address" className="px-4 py-2 w-full rounded-l-lg" />
-                            <button className=" hover:bg-hover border-l-2 bg-white px-4 py-2 rounded-r-lg">Subscribe</button>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <footer className=" bg-offwhite pb-10 sm:py-12 px-4 sm:px-16 grid items-center md:items-start grid-cols-2 grid-rows-2 lg:grid-cols-8 lg:grid-rows-1">
+      <div className="col-span-0 lg:col-span-2 flex flex-col gap-y-3 mx-auto">
+        <h1 className=" font-heading font-semibold text-base sm:text-xl tracking-wider">Our Company</h1>
+        <ul className=" flex flex-col gap-y-1">
+          <Link href="/about" className="text-xs sm:text-base hover:underline">
+            About
+          </Link>
+          <Link href="/work" className="text-xs sm:text-base hover:underline">
+            Our Work
+          </Link>
+          <Link href="/whyus" className="text-xs sm:text-base hover:underline">
+            Why Us
+          </Link>
+          <Link href="/contact" className="text-xs sm:text-base hover:underline">
+            Contact
+          </Link>
+        </ul>
+      </div>
+
+      <div className="col-span-0 lg:col-span-2 flex flex-col gap-y-3 mx-auto">
+        <h1 className=" font-heading font-semibold text-base sm:text-xl tracking-wider">Our Policies</h1>
+        <ul className=" flex flex-col gap-y-1 ">
+          <Link href="/about" className=" text-xs sm:text-base hover:underline">
+            Privacy Policy
+          </Link>
+          <Link href="/work" className="text-xs sm:text-base hover:underline">
+            Terms & Conditions
+          </Link>
+          <Link href="/whyus" className="text-xs sm:text-base hover:underline">
+            Code of conduct
+          </Link>
+          <Link href="/contact" className="text-xs sm:text-base hover:underline">
+            Blogs
+          </Link>
+        </ul>
+      </div>
+
+      <div className="col-span-2 px-3 lg:pl-10 row-span-2 lg:col-span-4 flex flex-col justify-center gap-y-5 mx-auto">
+        <h1 className=" font-heading font-semibold text-base sm:text-xl tracking-wider text-justify ">
+          We offer periodic updates about our research and development. Be among
+          the select first few to receive all such news & more!
+        </h1>
+        <div className=" flex flex-col gap-y-1 text-lg">
+          <h1 className=" font-heading font-semibold tracking-wider text-base sm:text-xl">
+            Subscribe to Newsletter
+          </h1>
+          <div className=" relative">
+            <input className=" w-full bg-white z-0 relative outline-none py-2 px-2 sm:py-3 sm:px-4 rounded-xl text-base sm:text-base placeholder:text-xs sm:placeholder:text-base" placeholder="Enter Your Email Address" />
+            <div className=" text-xs sm:text-sm font-semibold hover:cursor-pointer z-10 tracking-tight sm:tracking-wider py-1 sm:py-2 px-2 sm:px-4 border border-stone-600 absolute top-[7px] sm:top-[5px] right-2 sm:right-5 rounded-full">
+                Subscribe
             </div>
-        </footer >
-    );
+          </div>
+          <div className=" flex gap-x-4 mt-3">
+            <FaLinkedin className=" w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+            <FaFacebookSquare className=" w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+            <FaInstagramSquare className=" w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

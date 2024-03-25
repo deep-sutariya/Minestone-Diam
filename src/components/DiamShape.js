@@ -3,7 +3,7 @@ import DiamShapeCard from './DiamShapeCard'
 
 const DiamShape = () => {
   return (
-    <div className='flex flex-col justify-center items-center py-24 bg-white'>
+    <div className='flex flex-col justify-center items-center py-24 bg-white relative'>
       <div className=' w-full h-1/2 px-5 sm:px-10 md:px-20 lg:px-40 xl:px-72'>
         <Image src='/Shapes.svg' width={1200} height={500} alt='img' />
       </div>
