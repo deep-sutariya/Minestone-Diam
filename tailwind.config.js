@@ -1,0 +1,29 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors:{
+        offwhite:"#F2F0F8",
+        hover: "#E9E9E9",
+        detail:"rgb(75 85 99)",
+        detail2:"#96B6C5",
+        blue: "#3C8CAC",
+        brown: "#C28B7C",
+        col1: "#D2B48C",
+        col2: "#C4A484"
+      },
+      fontFamily: {
+        main: ['Protest Guerrilla', "cursive"],
+        heading: ['Forum', "serif"],
+        special: ['Merienda', "cursive"],
+        basic: ['Tenor Sans', "sans-serif"],
+      },
+    },
+  },
+plugins: [],
+};
