@@ -18,7 +18,7 @@ export default function Home() {
         </div>
 
         <div className=' absolute -top-8 -right-[340px] sm:top-0 sm:-right-[320px] md:top-16 md:-right-[520px] lg:top-16 lg:-right-[620px] z-10 w-fit h-min'>
-            <Image className='rounded-xl hover:scale-105 align-middle drop-shadow-xl h-[600px] w-[800px] sm:h-[600px] sm:w-[800px] md:h-[600px] md:w-[1200px] lg:h-[800px] lg:w-[1400px] object-cover' src='/try2r.png' width={3000} height={3000} alt='Diamond'/>
+            <Image className='rounded-xl align-middle drop-shadow-xl h-[600px] w-[800px] sm:h-[600px] sm:w-[800px] md:h-[600px] md:w-[1200px] lg:h-[800px] lg:w-[1400px] object-cover' src='/try2r.png' width={3000} height={3000} alt='Diamond'/>
         </div>
       </div>
 

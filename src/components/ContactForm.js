@@ -39,6 +39,7 @@ const ContactForm = () => {
       showErroBg();
       setError(msg);
     } else if (EmailValidator(values.email)) {
+      alert("Submitted Successfully!")
       setError("");
       showErroBg(0);
       console.log(values);
