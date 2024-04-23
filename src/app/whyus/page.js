@@ -43,7 +43,7 @@ const page = () => {
                 heading="Unmatched Experience:"
                 details="Benefit from our over three decades of expertise in the diamond industry. We leverage our in-depth knowledge and insights to navigate the dynamic diamond market and consistently deliver exceptional results."
                 bg="Experience"
-                grd="bg-gradient-to-tr"
+                grd="bg-gradient-to-br"
               />
             </TranslateFragment>
             <TranslateFragment y="100" x="100">
@@ -51,7 +51,7 @@ const page = () => {
                 heading="Heritage and Skill:"
                 details="Our roots in Kathiawad, Gujarat, have instilled a deep appreciation for the art of diamond craftsmanship. We seamlessly blend traditional practices with modern technologies, ensuring you receive not just a diamond but a piece of our enduring legacy."
                 bg="Skill"
-                grd="bg-gradient-to-tl"
+                grd="bg-gradient-to-bl"
               />
             </TranslateFragment>
             <TranslateFragment x="-100">
@@ -75,7 +75,7 @@ const page = () => {
                 heading="Trustworthy Relationships:"
                 details="Building trust is at the heart of everything we do. We foster open communication, ensuring you feel confident and informed throughout your diamond-buying journey. Your trust is our most valuable asset."
                 bg="Centricity"
-                grd="bg-gradient-to-br"
+                grd="bg-gradient-to-tr"
               />
             </TranslateFragment>
             <TranslateFragment y="-100" x="100">
@@ -83,7 +83,7 @@ const page = () => {
                 heading="Tailored Service:"
                 details="We go beyond simply offering diamonds. We offer personalized service, understanding that each client has unique preferences. Our team is dedicated to fulfilling your vision, whether you seek a bespoke design or expert advice on."
                 bg="Service"
-                grd="bg-gradient-to-bl"
+                grd="bg-gradient-to-tl"
               />
             </TranslateFragment>
         </div>

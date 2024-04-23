@@ -14,8 +14,8 @@ module.exports = {
         detail2:"#96B6C5",
         blue: "#3C8CAC",
         brown: "#C28B7C",
-        col1: "#D2B48C",
-        col2: "#C4A484"
+        col1: "#FFECB3",
+        col2: "#f09f89"
       },
       fontFamily: {
         main: ['Protest Guerrilla', "cursive"],

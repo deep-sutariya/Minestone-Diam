@@ -1,7 +1,7 @@
 const WhyUsCard = ({ bg, heading, details, grd }) => {
   return (
     <div
-      className={` relative ${grd} from-col1 to-brown hover:from-brown hover:to-col1 drop-shadow-lg hover:scale-105 duration-150 min-h-full w-full rounded-lg`}
+      className={` relative ${grd} from-col1 to-col2 hover:from-col2 hover:to-col1 drop-shadow-lg hover:scale-105 duration-150 min-h-full w-full rounded-lg`}
     >
       <h1 className="absolute -top-8 left-0 select-none font-main tracking-widest text-[80px] opacity-5 uppercase ">
         {/* {bg} */}

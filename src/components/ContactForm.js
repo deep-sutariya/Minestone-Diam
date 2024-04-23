@@ -3,6 +3,7 @@
 import { EmailValidator, RequierdValidation } from "@/utils/FormValidation";
 import useForm from "@/utils/useForm";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const ContactForm = () => {
   const { values, handleChange } = useForm({
@@ -21,9 +22,9 @@ const ContactForm = () => {
     values.message = "";
   };
 
-  const showErroBg = (code=0) => {
+  const showErroBg = (code = 0) => {
     Object.keys(values).filter((val) => {
-      if (values[val] == "" || (code == 1 && val=="email") ) {
+      if (values[val] == "" || (code == 1 && val == "email")) {
         document.getElementsByName(val)[0].style.background = "#FFE0E0";
       } else {
         document.getElementsByName(val)[0].style.background = "#FFFFFF";
@@ -31,7 +32,7 @@ const ContactForm = () => {
     });
   };
 
-  const submitForm = (e) => { 
+  const submitForm = async (e) => {
     e.preventDefault();
 
     const { msg, val } = RequierdValidation(values);
@@ -39,11 +40,20 @@ const ContactForm = () => {
       showErroBg();
       setError(msg);
     } else if (EmailValidator(values.email)) {
-      alert("Submitted Successfully!")
-      setError("");
-      showErroBg(0);
-      console.log(values);
-      //   clearForm();
+
+      try {
+        const data = await axios.post("/api/message", values);
+        if (data?.status === 200) {
+          alert(data?.data)
+          setError("");
+          showErroBg(0);
+          clearForm();
+        }
+
+      } catch (e) {
+        console.log("Error Sending Message", e);
+      }
+
     } else {
       showErroBg(1);
       setError("Email is not valid!");

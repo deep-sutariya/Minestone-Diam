@@ -17,10 +17,10 @@ const page = () => {
 
         <div className="flex flex-col gap-y-6 pt-[60vh] sm:pt-72 text-white w-full sm:w-1/2 pl-6 sm:pl-24">
           <div className="flex flex-col justify-start items-start gap-y-1 font-heading tracking-wider text-3xl md:text-6xl">
-            <h1>Work</h1>
+            <h1>Explore Brilliance with Minestone Diam</h1>
           </div>
           <p className=" w-11/12 sm:w-11/12 font-basic text-sm md:text-lg text-left">
-            Work Details
+          At Minestone Diam, we invite you to join our passionate team committed to excellence in every facet of the diamond industry. Explore a myriad of opportunities spanning global procurement, precision manufacturing, and meticulous distribution. Upholding the highest standards of ethics and sustainability, we ensure that every facet of our work reflects our unwavering dedication to brilliance. Come, let's together shape the future of diamonds, where innovation meets integrity, and every sparkle tells a story of craftsmanship and commitment.
           </p>
         </div>
       </div>
