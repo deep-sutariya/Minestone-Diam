@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className="z-50 absolute top-0 right-0 w-full bg-transparent">
       <div
         className={`w-full flex justify-between items-center px-5 md:px-10 lg:px-20 py-6 ${
-          path == "/" ? "text-detail" : path == "/admin" ? "text-detail" : " text-offwhite"
+          path == "/" ? "text-detail" : path == "/admin" || path == "/contact" ? "text-detail" : " text-offwhite"
         }`}
       >
         <div className=" drop-shadow-xl">

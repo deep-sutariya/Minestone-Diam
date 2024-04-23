@@ -7,8 +7,8 @@ import ContactForm from "@/components/ContactForm";
 
 const page = () => {
   return (
-    <div className=" overflow-x-hidden relative">
-      <div className="h-screen w-full relative">
+    <div className=" overflow-x-hidden relative mt-32">
+      {/* <div className="h-screen w-full relative">
         <div className="h-full -z-50 absolute top-0 left-0">
           <video className="h-screen w-screen object-cover" autoPlay muted loop>
             <source src="/about_top_video.mp4" type="video/mp4" />
@@ -26,7 +26,7 @@ const page = () => {
             experience ourselves!
           </p>
         </div>
-      </div>
+      </div> */}
 
       <div className="w-full px-2 md:px-5 py-10 lg:px-10 lg:py-20 items-center flex flex-col gap-y-2 lg:gap-y-8">
         <FadeFragment>
