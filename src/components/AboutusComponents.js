@@ -8,6 +8,7 @@ const AboutusComponents = ({
   fontCol = "text-black",
   pos = "",
   x = "",
+  src
 }) => {
   const xpos = Number(x);
   
@@ -19,8 +20,8 @@ const AboutusComponents = ({
         <div className={`w-full pl-10 pr-5 md:pl-32 md:pr-20 py-10 md:py-16 lg:px-32 lg:py-20 flex justify-center items-center gap-x-4 lg:gap-x-5 ${pos}`}>
           <div className=" min-h-full w-[40%] md:w-full ">
             <Image
-              className="w-full mx-auto h-24 md:h-40 lg:h-80 object-cover opacity-90"
-              src="/try3r.png"
+              className="w-[full] mx-auto h-24 md:h-40 lg:h-80 object-fill opacity-90"
+              src={src}
               width={500}
               height={500}
               alt={`${heading} Image`}
