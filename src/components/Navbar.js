@@ -3,10 +3,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const [login, setLogin] = useState(false);
+  useEffect(() => {
+    const state = JSON.parse(localStorage.getItem("login"));
+    setLogin(state);
+  }, [])
+
   const NavData = [
     { name: "About Us", link: "/about" },
     { name: "Our Work", link: "/work" },
@@ -25,17 +31,16 @@ const Navbar = () => {
   return (
     <nav className="z-50 absolute top-0 right-0 w-full bg-transparent">
       <div
-        className={`w-full flex justify-between items-center px-5 md:px-10 lg:px-20 py-6 ${
-          path == "/" ? "text-detail" : path == "/admin" || path == "/contact" ? "text-detail" : " text-offwhite"
-        }`}
+        className={`w-full flex justify-between items-center px-5 md:px-10 lg:px-20 py-6 ${path == "/" ? "text-detail" : path == "/contact" || path == "/admin" ? "text-detail" : "text-offwhite"
+          }`}
       >
         <div className=" drop-shadow-xl">
           <Link href="/">
             <Image
               className=" drop-shadow-sm w-20 h-20 md:w-32 md:h-32"
               src="/Logo.png"
-              width={110}
-              height={110}
+              width={1000}
+              height={1000}
               priority="true"
               alt="logo"
             />
@@ -75,12 +80,12 @@ const Navbar = () => {
           id="navbar"
           className={`animate-leftright z-50 drop-shadow-xl fixed top-0 right-0 bg-transparent backdrop-blur-xl min-w-[65%] rounded-s-xl min-h-[100vh] flex flex-col items-centerborder-b-2 pb-5`}
         >
-          <div className={`mt-12 sm:mt-14 px-5 h-screen ${path=="/about" || path=="/whyus" || path=="/work" ? "text-offwhite" : ""}`}>
+          <div className={`mt-12 sm:mt-14 px-5 h-screen ${path == "/about" || path == "/whyus" || path == "/work" || path == "/admin" ? "text-offwhite" : ""}`}>
             <X
               className=" w-7 h-7 cursor-pointer delay-150 ml-auto opacity-80"
               onClick={ToggleMenu}
             />
-            <div className=" flex flex-col items-center justify-between h-[80dvh]">
+            <div className=" flex flex-col items-center justify-between h-[83dvh]">
               <ul className={`flex gap-y-3 flex-col mt-10`}>
                 {NavData.map((data, ind) => {
                   return (

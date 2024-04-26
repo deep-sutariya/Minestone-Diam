@@ -28,14 +28,16 @@ const page = () => {
             </div>
           </div> */}
 
-      <div className=" px-5 py-20 md:px-24 lg:px-32 flex flex-col gap-y-10 lg:gap-y-16">
+      <div className=" px-5 pt-10 pb-20 md:py-20 md:px-24 lg:px-32">
         <FadeFragment>
-          <div className="w-full items-center flex flex-col gap-y-4 lg:gap-y-8">
-            <h1 className=" font-heading text-3xl lg:text-5xl">Send Us Your Query</h1>
+          <div className=" flex flex-col gap-y-10 lg:gap-y-16">
+            <div className="w-full items-center flex flex-col gap-y-4 lg:gap-y-8 ">
+              <h1 className=" font-heading text-3xl lg:text-5xl">Send Us Your Query</h1>
+            </div>
+
+            <ContactForm />
           </div>
         </FadeFragment>
-
-        <ContactForm />
       </div>
 
       <div className="w-full px-2 md:px-5 pb-10 lg:px-10 lg:py-20 items-center flex flex-col gap-y-2 lg:gap-y-8">
@@ -48,7 +50,7 @@ const page = () => {
 
         <div>
           <FadeFragment>
-            <div className=" w-full grid grid-cols-2 md:flex gap-y-5 justify-between gap-x-8 px-5 md:px-32 lg:px-48 py-4 lg:py-8 ">
+            <div className=" w-full grid grid-cols-2 md:flex gap-y-5 justify-between gap-x-8 px-2 md:px-32 lg:px-48 py-4 lg:py-8 ">
               <ContactCard type="Call" details="+91 99999 99999" />
               <ContactCard type="Email" details="info@minestone.diam" />
               <ContactCard

@@ -34,7 +34,6 @@ const Page = () => {
 
   useEffect(() => {
     const state = JSON.parse(localStorage.getItem("login"));
-    console.log("-->", state);
     setLogin(state);
     fetchMessage();
   }, [])
@@ -83,42 +82,63 @@ const Page = () => {
             }
           </div>
           :
-          <div className=" bg-slate-200 mt-32 flex flex-col gap-y-4 md:gap-y-8 shadow-xl rounded-xl px-6 py-6 md:px-16 md:py-12 w-full md:w-1/2 mx-5">
-            <div className=" font-bold text-xl md:text-3xl mb-4 md:mb-0">Login</div>
-            <div className=" flex flex-col gap-y-4 sm:gap-y-8">
-              <div className="flex flex-col gap-y-2 font-heading w-full">
-                <h1 className=" font-bold tracking-wider text-base lg:text-lg">
-                  Email<span className="text-red-500">*</span>
-                </h1>
-                <input
-                  required
-                  name="email"
-                  value={values.email}
-                  onChange={handleChange}
-                  className=" outline-none border border-zinc-400 py-2 px-4 sm:py-3 sm:px-5 rounded-lg text-base lg:text-lg"
-                />
-              </div>
 
-              <div className="flex flex-col gap-y-2 font-heading">
-                <h1 className=" font-bold tracking-wider text-base lg:text-lg">
-                  Password<span className="text-red-500">*</span>
-                </h1>
-                <input
-                  required
-                  name="password"
-                  value={values.password}
-                  onChange={handleChange}
-                  className=" outline-none border border-zinc-400 py-2 px-4 sm:py-3 sm:px-5 rounded-lg text-base lg:text-lg"
-                />
-              </div>
+          <div className="h-screen w-full overflow-x-hidden flex justify-center items-center relative">
+
+            <div className="h-full -z-50 absolute top-0 left-0">
+              <video className="h-screen w-screen object-cover" autoPlay muted loop>
+                <source src="/whyus_top_video.mp4" type="video/mp4" />
+              </video>
             </div>
 
-            <div className=" text-red-800 tracking-wider font-bold font-heading">{errmsg}</div>
-            <div
-              onClick={submitForm}
-              className=" py-2 px-4 md:py-3 md:px-5 sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-col2 text-center hover:bg-col1"
-            >
-              Login
+
+            <div className=" bg-transparent backdrop-blur-lg mt-28 flex flex-col gap-y-4 md:gap-y-6 shadow-2xl rounded-xl px-6 py-6 md:px-16 md:py-10 w-full md:w-1/3 mx-5">
+              <div className=" flex justify-between items-center">
+                <div className=" font-bold text-xl md:text-3xl mb-4 md:mb-0 text-offwhite">Login</div>
+                <Image
+                  className=" drop-shadow-sm w-12 h-12 md:w-24 md:h-24"
+                  src="/Logo.png"
+                  width={1000}
+                  height={1000}
+                  priority="true"
+                  alt="logo"
+                />
+              </div>
+              <div className=" flex flex-col gap-y-4 sm:gap-y-4">
+                <div className="flex flex-col gap-y-2 font-heading w-full">
+                  <h1 className=" font-bold tracking-wider text-base lg:text-lg text-offwhite">
+                    Email<span className="text-red-500">*</span>
+                  </h1>
+                  <input
+                    required
+                    name="email"
+                    value={values.email}
+                    onChange={handleChange}
+                    className=" outline-none border border-zinc-400 py-2 px-4 sm:py-3 sm:px-5 rounded-lg text-base lg:text-lg bg-transparent backdrop-blur-lg text-offwhite"
+                  />
+                </div>
+
+                <div className="flex flex-col gap-y-2 font-heading">
+                  <h1 className=" font-bold tracking-wider text-base lg:text-lg text-offwhite">
+                    Password<span className="text-red-500">*</span>
+                  </h1>
+                  <input
+                    required
+                    name="password"
+                    value={values.password}
+                    onChange={handleChange}
+                    className="outline-none border border-zinc-400 py-2 px-4 sm:py-3 sm:px-5 rounded-lg text-base lg:text-lg bg-transparent backdrop-blur-lg text-offwhite"
+                  />
+                </div>
+              </div>
+
+              <div className=" text-red-400 tracking-wider font-bold font-heading">{errmsg}</div>
+              <div
+                onClick={submitForm}
+                className=" py-2 px-4 md:py-3 md:px-5 sm:px-7 tracking-wide sm:font-semibold text-offwhite cursor-pointer rounded-lg bg-col2 text-center hover:bg-orange-300 text-base lg:text-lg"
+              >
+                Login
+              </div>
             </div>
 
           </div>
