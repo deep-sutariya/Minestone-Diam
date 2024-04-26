@@ -11,12 +11,12 @@ const page = () => {
       <div className="h-screen w-full relative">
         <div className="h-full -z-50 absolute top-0 left-0">
           <video className="h-screen w-screen object-cover" autoPlay muted loop>
-            <source src="/about_top_video.mp4" type="video/mp4" />
+            <source src="/work_top_video.mp4" type="video/mp4" />
           </video>
         </div>
 
-        <div className="flex flex-col gap-y-6 pt-[53vh] sm:pt-72 text-white w-full sm:w-1/2 pl-6 sm:pl-24">
-          <div className="flex flex-col justify-start items-start gap-y-1 font-heading tracking-wider text-3xl md:text-6xl">
+        <div className="flex flex-col gap-y-6 pt-[53vh] sm:pt-72 text-white w-full sm:w-1/2 pl-6 sm:pl-24 z-20">
+          <div className="flex flex-col justify-start items-start gap-y-1 font-heading tracking-wider text-3xl md:text-6xl ">
             <h1>Explore Brilliance with Minestone Diam</h1>
           </div>
           <p className=" w-11/12 sm:w-11/12 font-basic text-xs md:text-lg text-left">
@@ -37,37 +37,37 @@ const page = () => {
         </FadeFragment>
 
         <div className=" w-full bg-white p-4 lg:p-8 grid md:grid-cols-2 gap-5 lg:gap-10 ">
-          <TranslateFragment x="-100">
+          <FadeFragment>
             <WorkCard
               heading="Global Procurement of Rough Diamonds:"
               details="We source high-quality rough diamonds from across the globe,catering to both domestic and international markets."
               grdpos="bg-gradient-to-br"
             />
-          </TranslateFragment>
+          </FadeFragment>
 
-          <TranslateFragment x="100">
+          <FadeFragment >
             <WorkCard
               heading="Precision Manufacturing:"
               details="Utilizing cutting-edge technologies and time-honored craftsmanship, we transform rough diamonds into exquisite polished stones."
               grdpos="bg-gradient-to-bl"
             />
-          </TranslateFragment>
+          </FadeFragment>
 
-          <TranslateFragment x="-100">
+          <FadeFragment>
             <WorkCard
               heading="Diverse Diamond Selection:"
               details="Our extensive portfolio encompasses loose diamonds and fancy diamonds, catering to a wide variety of design preferences."
               grdpos="bg-gradient-to-tr"
             />
-          </TranslateFragment>
+          </FadeFragment>
 
-          <TranslateFragment x="100">
+          <FadeFragment>
             <WorkCard
               heading="Global Exports and Domestic Distribution:"
               details="We export our diamonds to various countries while maintaining a strong presence in the Indian domestic market, supplying leading players."
               grdpos="bg-gradient-to-tl"
             />
-          </TranslateFragment>
+          </FadeFragment>
         </div>
       </div>
     </div>

@@ -7,13 +7,13 @@ const ContactCard = ({ type, details }) => {
     <div
       className={` w-full flex flex-col items-center gap-y-3 md:gap-y-5`}
     >
-      <div className=" bg-gray-800 p-3 md:p-4 lg:p-6 text-white rounded-full">
+      <div className=" bg-gray-800 p-2 md:p-3 lg:p-4 text-white rounded-full">
         {type == "Call" ? (
-          <FiPhoneCall className=" w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16" />
+          <FiPhoneCall className=" w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12" />
         ) : type == "Email" ? (
-          <HiOutlineMail className="w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16" />
+          <HiOutlineMail className="w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12" />
         ) : (
-          <HiOutlineLocationMarker className="w-6 h-6 md:w-10 md:h-10 lg:w-16 lg:h-16" />
+          <HiOutlineLocationMarker className="w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12" />
         )}
       </div>
       <div className="flex flex-col font-heading text-center">
