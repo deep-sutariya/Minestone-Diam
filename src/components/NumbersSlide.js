@@ -8,8 +8,8 @@ const NumbersSlide = () => {
             <Image src='/Home_No_Img.png' width={1100} height={1100} alt="Numbers Image"/>
         </div>
         <div className='w-full items-center justify-around flex gap-x-2 sm:gap-x-20 xl:gap-x-24'>
-            <NumbersDisplay number="50000+" detail="Stones Listed" />
-            <NumbersDisplay number="1000+" detail="Active Buyers" />
+            <NumbersDisplay number="5000+" detail="Stones Listed" />
+            <NumbersDisplay number="500+" detail="Active Buyers" />
             <NumbersDisplay number="$1 Million+" detail="Trading done" />
         </div>
     </div>

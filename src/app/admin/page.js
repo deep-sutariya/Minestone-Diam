@@ -29,21 +29,16 @@ const Page = () => {
   }
 
   useEffect(() => {
-    if (login == false) {
-      const state = localStorage.getItem("login");
-      setLogin(state);
-    }
+    const state = JSON.parse(localStorage.getItem("login"));
+    console.log("-->", state);
+    setLogin(state);
     fetchMessage();
-  }, [login])
-
-  useEffect(() => {
-    console.log(messages);
-  }, [messages])
+  }, [])
 
   const submitForm = () => {
     if (values.email.trim() == "admin@minestone.diam" && values.password.trim() == "Minestone@Diam") {
       setLogin(true);
-      localStorage.setItem("login", true);
+      localStorage.setItem("login", JSON.stringify("true"));
       setErrMsg("");
       handleChange({ target: { name: "email", value: "" } });
       handleChange({ target: { name: "password", value: "" } });
@@ -54,11 +49,22 @@ const Page = () => {
   }
 
   return (
-    <div className=" flex justify-center items-center mt-48 mb-20">
+    <div className=" flex justify-center items-center min-h-screen">
       {
-        !login ?
-          <div className="bg-gradient-to-l from-col1 to-col2 mt-32 flex flex-col gap-y-4 sm:gap-y-8 shadow-xl rounded-xl px-16 py-12 w-1/2">
-            <div className=" font-bold text-3xl">Login</div>
+        login?
+          <div className=" flex flex-col gap-y-8 md:gap-y-10 lg:gap-y-20 justify-center items-center mt-32 mb-10 md:mt-44 md:mb-20 w-full">
+            <div className=" font-heading text-xl lg:text-4xl border-b-2 border-gray-400">Message</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 md:gap-y-8 px-3 md:px-10 w-full">
+              {
+                messages.length > 0 && messages.map((val, index) => {
+                  return <MessageCard key={index} name={val?.name} email={val?.email} company={val?.company} message={val?.message} id={val?._id} fetchMessage={fetchMessage} />
+                })
+              }
+            </div>
+          </div>
+          :
+          <div className=" bg-slate-200 mt-32 flex flex-col gap-y-4 md:gap-y-8 shadow-xl rounded-xl px-6 py-6 md:px-16 md:py-12 w-full md:w-1/2 mx-5">
+            <div className=" font-bold text-xl md:text-3xl mb-4 md:mb-0">Login</div>
             <div className=" flex flex-col gap-y-4 sm:gap-y-8">
               <div className="flex flex-col gap-y-2 font-heading w-full">
                 <h1 className=" font-bold tracking-wider text-base lg:text-lg">
@@ -88,24 +94,13 @@ const Page = () => {
             </div>
 
             <div className=" text-red-800 tracking-wider font-bold font-heading">{errmsg}</div>
-
             <div
               onClick={submitForm}
-              className=" py-2 px-5 sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-slate-900 w-1/4 text-center hover:bg-slate-200 hover:text-slate-900"
+              className=" py-2 px-4 md:py-3 md:px-5 sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-col2 text-center hover:bg-col1"
             >
               Login
             </div>
-          </div>
-          :
-          <div className=" flex flex-col gap-y-20 justify-center items-center">
-            <div className=" font-heading text-4xl border-b-2 border-gray-400">Messages</div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 px-5 md:px-10 lg:px-20">
-              {
-                messages.length > 0 && messages.map((val, index) => {
-                  return <MessageCard key={index} name={val?.name} email={val?.email} company={val?.company} message={val?.message} id={val?._id} fetchMessage={fetchMessage}/>
-                })
-              }
-            </div>
+
           </div>
       }
     </div>

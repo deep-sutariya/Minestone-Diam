@@ -75,13 +75,13 @@ const Navbar = () => {
           id="navbar"
           className={`animate-leftright z-50 drop-shadow-xl fixed top-0 right-0 bg-transparent backdrop-blur-xl min-w-[65%] rounded-s-xl min-h-[100vh] flex flex-col items-centerborder-b-2 pb-5`}
         >
-          <div className=" mt-12 sm:mt-14 px-5 h-screen">
+          <div className={`mt-12 sm:mt-14 px-5 h-screen ${path=="/about" || path=="/whyus" || path=="/work" ? "text-offwhite" : ""}`}>
             <X
               className=" w-7 h-7 cursor-pointer delay-150 ml-auto opacity-80"
               onClick={ToggleMenu}
             />
             <div className=" flex flex-col items-center justify-between h-[80dvh]">
-              <ul className="flex gap-y-3 flex-col mt-10">
+              <ul className={`flex gap-y-3 flex-col mt-10`}>
                 {NavData.map((data, ind) => {
                   return (
                     <li

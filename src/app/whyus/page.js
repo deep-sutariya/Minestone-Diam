@@ -38,54 +38,54 @@ const page = () => {
         </FadeFragment>
 
         <div className=" w-full bg-white p-1 sm:p-4 lg:p-8 grid grid-cols-2 gap-2 sm:gap-5 lg:gap-8 ">
-            <TranslateFragment y="100" x="-100">
+            <FadeFragment>
               <WhyUsCard
                 heading="Unmatched Experience:"
                 details="Benefit from our over three decades of expertise in the diamond industry. We leverage our in-depth knowledge and insights to navigate the dynamic diamond market and consistently deliver exceptional results."
                 bg="Experience"
                 grd="bg-gradient-to-br"
               />
-            </TranslateFragment>
-            <TranslateFragment y="100" x="100">
+            </FadeFragment>
+            <FadeFragment >
               <WhyUsCard
                 heading="Heritage and Skill:"
                 details="Our roots in Kathiawad, Gujarat, have instilled a deep appreciation for the art of diamond craftsmanship. We seamlessly blend traditional practices with modern technologies, ensuring you receive not just a diamond but a piece of our enduring legacy."
                 bg="Skill"
                 grd="bg-gradient-to-bl"
               />
-            </TranslateFragment>
-            <TranslateFragment x="-100">
+            </FadeFragment>
+            <FadeFragment >
               <WhyUsCard
                 heading="Unwavering Quality:"
                 details="Witness the brilliance of our exquisite diamonds, meticulously procured, manufactured, and polished using the world's finest technologies. Each diamond embodies our commitment to unparalleled quality and craftsmanship."
                 bg="Quality"
                 grd="bg-gradient-to-r"
               />
-            </TranslateFragment>
-            <TranslateFragment x="100">
+            </FadeFragment>
+            <FadeFragment >
               <WhyUsCard
                 heading="Sustainable Practices:"
                 details="Choose diamonds that stand for more than beauty. We prioritize sustainability, incorporating advanced technologies and responsible sourcing to minimize environmental impact. Embrace the allure of diamonds with a conscience."
                 bg="Practices"
                 grd="bg-gradient-to-l"
               />
-            </TranslateFragment>
-            <TranslateFragment y="-100" x="-100">
+            </FadeFragment>
+            <FadeFragment >
               <WhyUsCard
                 heading="Trustworthy Relationships:"
                 details="Building trust is at the heart of everything we do. We foster open communication, ensuring you feel confident and informed throughout your diamond-buying journey. Your trust is our most valuable asset."
                 bg="Centricity"
                 grd="bg-gradient-to-tr"
               />
-            </TranslateFragment>
-            <TranslateFragment y="-100" x="100">
+            </FadeFragment>
+            <FadeFragment>
               <WhyUsCard
                 heading="Tailored Service:"
                 details="We go beyond simply offering diamonds. We offer personalized service, understanding that each client has unique preferences. Our team is dedicated to fulfilling your vision, whether you seek a bespoke design or expert advice on."
                 bg="Service"
                 grd="bg-gradient-to-tl"
               />
-            </TranslateFragment>
+            </FadeFragment>
         </div>
       </div>
     </div>
