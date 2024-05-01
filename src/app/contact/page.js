@@ -7,7 +7,7 @@ import ContactForm from "@/components/ContactForm";
 
 const page = () => {
   return (
-    <div className=" overflow-x-hidden relative mt-32">
+    <div className=" overflow-x-hidden relative mt-36">
       {/* <div className="h-screen w-full relative">
         <div className="h-full -z-50 absolute top-0 left-0">
           <video className="h-screen w-screen object-cover" autoPlay muted loop>
@@ -28,7 +28,7 @@ const page = () => {
             </div>
           </div> */}
 
-      <div className=" px-5 pt-10 pb-20 md:py-20 md:px-24 lg:px-32">
+      <div className=" px-5 pt-10 pb-20 md:pt-20 md:pb-5 md:px-24 lg:px-32">
         <FadeFragment>
           <div className=" flex flex-col gap-y-10 lg:gap-y-16">
             <div className="w-full items-center flex flex-col gap-y-4 lg:gap-y-8 ">
@@ -50,16 +50,16 @@ const page = () => {
 
         <div>
           <FadeFragment>
-            <div className=" w-full grid grid-cols-2 md:flex gap-y-5 justify-between gap-x-8 px-2 md:px-32 lg:px-48 py-4 lg:py-8 ">
+            <div className="w-full grid grid-cols-2 md:flex gap-y-5 justify-between gap-x-5 px-2 md:px-16 lg:px-60 py-4 lg:py-8 ">
               <ContactCard type="Call" details="+91 99999 99999" />
               <ContactCard type="Email" details="info@minestone.diam" />
               <ContactCard
                 type="HQ"
-                details="1102, Rajhans Montessa, Dumas, Surat, Gujarat, -395007"
+                details="DhanShree, Bambavadi, Tunki, Patel Nagar, Surat, Gujarat, -394601"
               />
               <ContactCard
                 type="Branch"
-                details="1102, Rajhans Montessa, Dumas, Surat, Gujarat, -395007"
+                details="Bandra Kurla Complex, BDB, Mumbai, Maharashtra, -400051"
               />
             </div>
           </FadeFragment>

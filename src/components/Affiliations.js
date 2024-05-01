@@ -2,9 +2,9 @@ import AffiliationCard from "./AffiliationCard";
 
 const Affiliations = () => {
   return (
-    <div className=" w-full bg-black flex flex-col lg:px-5 pt-10 pb-20 md:px-2 md:py-20  md:gap-y-10 justify-center items-center text-offwhite">
-      <h1 className=" text-2xl md:text-4xl lg:text-5xl uppercase font-heading">Affiliations</h1>
-      <div className='grid grid-cols-2 gap-y-5 gap-x-1 sm:gap-x-6 px-0 mt-9 w-[95%] md:w-4/5 sc'>
+    <div className=" w-full bg-black flex flex-col lg:px-5 pt-10 pb-16 md:px-2 md:py-20  md:gap-y-10 justify-center items-center text-offwhite">
+      <h1 className=" text-2xl md:text-4xl lg:text-5xl uppercase font-heading text-[#f0c200] tracking-wider">Affiliations</h1>
+      <div className='grid grid-cols-2 gap-y-5 gap-x-1 sm:gap-x-0 px-1 0 mt-9 w-[95%] md:w-4/5'>
         <AffiliationCard
           link="https://gjepc.org/"
           x={-100}

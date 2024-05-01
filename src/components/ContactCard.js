@@ -9,18 +9,18 @@ const ContactCard = ({ type, details }) => {
     >
       <div className=" bg-gray-800 p-2 md:p-3 lg:p-4 text-white rounded-full">
         {type == "Call" ? (
-          <FiPhoneCall className=" w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12" />
+          <FiPhoneCall className=" w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" />
         ) : type == "Email" ? (
-          <HiOutlineMail className="w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12" />
+          <HiOutlineMail className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" />
         ) : (
-          <HiOutlineLocationMarker className="w-5 h-5 md:w-8 md:h-8 lg:w-12 lg:h-12" />
+          <HiOutlineLocationMarker className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" />
         )}
       </div>
       <div className="flex flex-col font-heading text-center">
-        <div className=" text-xs lg:text-xl capitalize lg:tracking-wider">
+        <div className=" text-sm md:text-xl capitalize lg:tracking-wider">
           {type}
         </div>
-        <div className=" text-base lg:text-2xl font-extrabold lg:tracking-wider">
+        <div className=" text-sm md:text-lg font-extrabold lg:tracking-wider">
           {details}
         </div>
       </div>

@@ -37,10 +37,10 @@ const Footer = () => {
             Terms & Conditions
           </Link>
           <Link href="/code-of-conduct" className="text-xs sm:text-base hover:underline">
-            Code of conduct
+            Code of IConduct
           </Link>
           <Link href="/blog" className="text-xs sm:text-base hover:underline">
-            blog
+            Blog
           </Link>
         </ul>
       </div>
@@ -57,11 +57,13 @@ const Footer = () => {
           <div className=" relative">
             <input className=" w-full bg-white z-0 relative outline-none py-2 px-2 sm:py-3 sm:px-4 rounded-xl text-base sm:text-base placeholder:text-xs sm:placeholder:text-base" placeholder="Enter Your Email Address" />
             <div className=" text-xs sm:text-sm font-semibold hover:cursor-pointer z-10 tracking-tight sm:tracking-wider py-1 sm:py-2 px-2 sm:px-4 border border-stone-600 absolute top-[7px] sm:top-[5px] right-2 sm:right-5 rounded-full">
-                Subscribe
+              Subscribe
             </div>
           </div>
           <div className=" flex gap-x-2 md:gap-x-4 mt-3">
-            <FaLinkedin className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+            <Link href="https://www.linkedin.com/company/minestonediam/">
+              <FaLinkedin className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+            </Link>
             <FaSquareXTwitter className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
             <FaFacebookSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
             <FaInstagramSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />

@@ -83,13 +83,13 @@ const Page = () => {
           </div>
           :
 
-          <div className="h-screen w-full overflow-x-hidden flex justify-center items-center relative">
+          <div className="h-screen w-full overflow-x-hidden flex justify-center items-center relative grad">
 
-            <div className="h-full -z-50 absolute top-0 left-0">
+            {/* <div className="h-full -z-50 absolute top-0 left-0">
               <video className="h-screen w-screen object-cover" autoPlay muted loop>
                 <source src="/whyus_top_video.mp4" type="video/mp4" />
               </video>
-            </div>
+            </div> */}
 
 
             <div className=" bg-transparent backdrop-blur-lg mt-28 flex flex-col gap-y-4 md:gap-y-6 shadow-2xl rounded-xl px-6 py-6 md:px-16 md:py-10 w-full md:w-1/3 mx-5">

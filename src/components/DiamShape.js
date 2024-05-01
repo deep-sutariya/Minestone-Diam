@@ -8,7 +8,7 @@ const DiamShape = () => {
         <Image src='/Shapes.svg' width={1200} height={500} alt='img' />
       </div>
       <div className=' px-5 sm:px-10 md:px-20 lg:px-40 xl:px-72 flex flex-col gap-y-6 sm:gap-4 md:gap-8 text-lg font-basic py-6'>
-        <h1 className='text-2xl sm:text-3xl lg:text-5xl font-heading'>Why should one join Milestone Diam?</h1>
+        <h1 className='text-2xl sm:text-3xl lg:text-5xl font-heading'>Why should one join Minestone Diam?</h1>
         {/* <p className=' text-xs sm:text-lg text-detail text-justify'>The quintessential Lab-grown Diamond Trading platform.</p> */}
         {/* <p className=' text-xs sm:text-lg text-detail text-justify'>Constantly evolving to meet the market needs & adding new features to the platform, Milestone Diam has quickly established itself as a market leader in the Lab-grown diamond trade sphere.</p> */}
       </div>
