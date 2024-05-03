@@ -69,7 +69,7 @@ const Page = () => {
             />
 
           <AboutusComponents
-            src='/Team.png'
+            src='/Team.jpg'
             x="-100"
             pos="flex-row-reverse"
             bgCol="bg-white"
@@ -78,7 +78,7 @@ const Page = () => {
             />
 
           <AboutusComponents
-            src='/Philosophy.png'
+            src='/Philosophy.jpg'
             x="100"
             fontCol="text-offwhite"
             bgCol="bg-black"
@@ -87,7 +87,7 @@ const Page = () => {
             />
 
           <AboutusComponents
-            src='/Vision.png'
+            src='/Vision.jpeg'
             x="-100"
             pos="flex-row-reverse"
             bgCol="bg-white"

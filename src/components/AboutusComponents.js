@@ -21,7 +21,7 @@ const AboutusComponents = ({
         <div className={`w-full pl-10 pr-5 md:pl-32 md:pr-20 ${whyUsCard=="true" ? "py-10" : "py-10 md:py-16 lg:py-20"} lg:px-32 flex justify-center items-center gap-x-4 lg:gap-x-5 ${pos}`}>
           <div className=" min-h-full w-[40%] md:w-full ">
             <Image
-              className="w-[full] mx-auto h-24 md:h-40 lg:h-80 object-fill opacity-90"
+              className="w-[full] mx-auto h-24 md:h-40 lg:h-80 object-fill shadow-xl rounded-lg"
               src={src}
               width={500}
               height={500}

@@ -15,12 +15,12 @@ const page = () => {
           </video>
         </div>
 
-        <div className="flex flex-col gap-y-6 pt-[53vh] sm:pt-72 text-white w-full sm:w-1/2 pl-6 sm:pl-24 z-20">
+        <div className="flex flex-col gap-y-6 pt-[53vh] sm:pt-72 text-white w-full sm:w-1/2 pl-6 sm:pl-24 bg-transparent backdrop-blur-sm">
           <div className="flex flex-col justify-start items-start gap-y-1 font-heading tracking-wider text-3xl md:text-6xl ">
-            <h1>Explore Brilliance with Minestone Diam</h1>
+            <h1 className=" z-50">Explore Brilliance with Minestone Diam</h1>
           </div>
-          <p className=" w-11/12 sm:w-11/12 font-basic text-xs md:text-lg text-left">
-          At Minestone Diam, we invite you to join our passionate team committed to excellence in every facet of the diamond industry. Explore a myriad of opportunities spanning global procurement, precision manufacturing, and meticulous distribution. Upholding the highest standards of ethics and sustainability, we ensure that every facet of our work reflects our unwavering dedication to brilliance. Come, and together shape the future of diamonds, where innovation meets integrity, and every sparkle tells a story of craftsmanship and commitment.
+          <p className=" z-50 w-11/12 sm:w-11/12 font-basic text-xs md:text-lg text-left tracking-wide">
+            At Minestone Diam, we invite you to join our passionate team committed to excellence in every facet of the diamond industry. Explore a myriad of opportunities spanning global procurement, precision manufacturing, and meticulous distribution. Upholding the highest standards of ethics and sustainability, we ensure that every facet of our work reflects our unwavering dedication to brilliance. Come, and together shape the future of diamonds, where innovation meets integrity, and every sparkle tells a story of craftsmanship and commitment.
           </p>
         </div>
       </div>
@@ -39,30 +39,34 @@ const page = () => {
         <div className=" w-full bg-white p-4 lg:p-8 grid md:grid-cols-2 gap-5 lg:gap-10 ">
           <FadeFragment>
             <WorkCard
+              bgImg="/Global_Procurement_Rough.jpg"
               heading="Global Procurement of Rough Diamonds:"
               details="We source high-quality rough diamonds from across the globe,catering to both domestic and international markets."
               grdpos="bg-gradient-to-br"
-            />
+              />
           </FadeFragment>
 
           <FadeFragment >
             <WorkCard
+              bgImg="/Precision_Manufacturing.png"
               heading="Precision Manufacturing:"
               details="Utilizing cutting-edge technologies and time-honored craftsmanship, we transform rough diamonds into exquisite polished stones."
               grdpos="bg-gradient-to-bl"
-            />
+              />
           </FadeFragment>
 
           <FadeFragment>
             <WorkCard
+              bgImg="/Diverse_Diamond_Selection.jpg"
               heading="Diverse Diamond Selection:"
               details="Our extensive portfolio encompasses loose diamonds and fancy diamonds, catering to a wide variety of design preferences."
               grdpos="bg-gradient-to-tr"
-            />
+              />
           </FadeFragment>
 
           <FadeFragment>
             <WorkCard
+              bgImg="/Global_Exports_and_Domestic_Distribution.jpeg"
               heading="Global Exports and Domestic Distribution:"
               details="We export our diamonds to various countries while maintaining a strong presence in the Indian domestic market, supplying leading players."
               grdpos="bg-gradient-to-tl"

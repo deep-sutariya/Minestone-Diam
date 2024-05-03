@@ -116,7 +116,7 @@ const page = () => {
 
           <div className="overflow-x-hidden">
             <AboutusComponents
-              src='/try3r.png'
+              src='/Precision_Manufacturing.png'
               whyUsCard="true"
               x="100"
               bgCol="bg-offwhite"
@@ -125,27 +125,27 @@ const page = () => {
             />
 
             <AboutusComponents
-              src='/try3r.png'
+              src='/Unwavering_Quality.jpg'
               whyUsCard="true"
               x="-100"
               pos="flex-row-reverse"
               bgCol="bg-white"
-              heading="Heritage and Skill:"
-              details="Our roots in Kathiawad, Gujarat, have instilled a deep appreciation for the art of diamond craftsmanship. We seamlessly blend traditional practices with modern technologies, ensuring you receive not just a diamond but a piece of our enduring legacy."
-            />
-
-            <AboutusComponents
-              src='/try3r.png'
-              whyUsCard="true"
-              x="100"
-              fontCol="text-offwhite"
-              bgCol="bg-black"
               heading="Unwavering Quality:"
               details="Witness the brilliance of our exquisite diamonds, meticulously procured, manufactured, and polished using the world's finest technologies. Each diamond embodies our commitment to unparalleled quality and craftsmanship."
             />
 
             <AboutusComponents
-              src='/try3r.png'
+              src='/Heritage_and_Skills.jpg'
+              whyUsCard="true"
+              x="100"
+              fontCol="text-offwhite"
+              bgCol="bg-black"
+              heading="Heritage and Skill:"
+              details="Our roots in Kathiawad, Gujarat, have instilled a deep appreciation for the art of diamond craftsmanship. We seamlessly blend traditional practices with modern technologies, ensuring you receive not just a diamond but a piece of our enduring legacy."
+            />
+
+            <AboutusComponents
+              src='/Sustainable_Practices.jpg'
               whyUsCard="true"
               x="-100"
               pos="flex-row-reverse"
@@ -155,7 +155,7 @@ const page = () => {
             />
 
             <AboutusComponents
-              src='/try3r.png'
+              src='/Trustworthy_Realationship.jpg'
               whyUsCard="true"
               x="100"
               bgCol="bg-white"
@@ -164,7 +164,7 @@ const page = () => {
             />
 
             <AboutusComponents
-              src='/try3r.png'
+              src='/Tailored_Services.jpg'
               whyUsCard="true"
               x="-100"
               pos="flex-row-reverse"
