@@ -46,21 +46,21 @@ const page = () => {
               />
           </FadeFragment>
 
-          <FadeFragment >
-            <WorkCard
-              bgImg="/Precision_Manufacturing.png"
-              heading="Precision Manufacturing:"
-              details="Utilizing cutting-edge technologies and time-honored craftsmanship, we transform rough diamonds into exquisite polished stones."
-              grdpos="bg-gradient-to-bl"
-              />
-          </FadeFragment>
-
           <FadeFragment>
             <WorkCard
               bgImg="/Diverse_Diamond_Selection.jpg"
               heading="Diverse Diamond Selection:"
               details="Our extensive portfolio encompasses loose diamonds and fancy diamonds, catering to a wide variety of design preferences."
               grdpos="bg-gradient-to-tr"
+              />
+          </FadeFragment>
+          
+          <FadeFragment >
+            <WorkCard
+              bgImg="/Precision_Manufacturing.png"
+              heading="Precision Manufacturing:"
+              details="Utilizing cutting-edge technologies and time-honored craftsmanship, we transform rough diamonds into exquisite polished stones."
+              grdpos="bg-gradient-to-bl"
               />
           </FadeFragment>
 
