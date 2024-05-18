@@ -7,7 +7,7 @@ const ContactCard = ({ type, details }) => {
     <div
       className={` w-full flex flex-col items-center gap-y-3 md:gap-y-5`}
     >
-      <div className=" bg-gray-800 p-2 md:p-3 lg:p-4 text-white rounded-full">
+      <div className=" bg-gray-800 hover:bg-col1 p-2 md:p-3 lg:p-4 text-white rounded-full">
         {type == "Call" ? (
           <FiPhoneCall className=" w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" />
         ) : type == "Email" ? (

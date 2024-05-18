@@ -118,7 +118,7 @@ const ContactForm = () => {
 
       <div
         onClick={submitForm}
-        className="py-2 px-5 sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-slate-900 w-fit hover:bg-slate-200 hover:text-slate-900"
+        className="py-2 px-5 sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-[#252525] w-fit hover:bg-col1 hover:font-bold"
       >
         Send us
       </div>

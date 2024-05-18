@@ -28,7 +28,7 @@ const page = () => {
             </div>
           </div> */}
 
-      <div className=" px-5 pt-10 pb-20 md:pt-20 md:pb-5 md:px-24 lg:px-32">
+      <div className=" px-5 pt-10 pb-20 md:pt-20 md:pb-5 md:px-24 lg:px-56">
         <FadeFragment>
           <div className=" flex flex-col gap-y-10 lg:gap-y-16">
             <div className="w-full items-center flex flex-col gap-y-4 lg:gap-y-8 ">
@@ -51,7 +51,7 @@ const page = () => {
         <div>
           <FadeFragment>
             <div className="w-full grid grid-cols-2 md:flex gap-y-5 justify-between gap-x-5 px-2 md:px-16 lg:px-60 py-4 lg:py-8 ">
-              <ContactCard type="Call" details="+91 99999 99999" />
+              <ContactCard type="Call" details="+91 93283 49312" />
               <ContactCard type="Email" details="info@minestone.diam" />
               <ContactCard
                 type="HQ"

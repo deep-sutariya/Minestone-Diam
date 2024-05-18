@@ -139,7 +139,7 @@ const page = () => {
               whyUsCard="true"
               x="100"
               fontCol="text-offwhite"
-              bgCol="bg-black"
+              bgCol="bg-[#252525]"
               heading="Heritage and Skill:"
               details="Our roots in Kathiawad, Gujarat, have instilled a deep appreciation for the art of diamond craftsmanship. We seamlessly blend traditional practices with modern technologies, ensuring you receive not just a diamond but a piece of our enduring legacy."
             />
@@ -169,7 +169,7 @@ const page = () => {
               x="-100"
               pos="flex-row-reverse"
               fontCol="text-offwhite"
-              bgCol="bg-black"
+              bgCol="bg-[#252525]"
               heading="Tailored Service:"
               details="We go beyond simply offering diamonds. We offer personalized service, understanding that each client has unique preferences. Our team is dedicated to fulfilling your vision, whether you seek a bespoke design or expert advice on."
             />

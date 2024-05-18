@@ -37,7 +37,7 @@ const Footer = () => {
             Terms & Conditions
           </Link>
           <Link href="/code-of-conduct" className="text-xs sm:text-base hover:underline">
-            Code of IConduct
+            Code of Conduct
           </Link>
           <Link href="/blog" className="text-xs sm:text-base hover:underline">
             Blog
@@ -56,7 +56,7 @@ const Footer = () => {
           </h1>
           <div className=" relative">
             <input className=" w-full bg-white z-0 relative outline-none py-2 px-2 sm:py-3 sm:px-4 rounded-xl text-base sm:text-base placeholder:text-xs sm:placeholder:text-base" placeholder="Enter Your Email Address" />
-            <div className=" text-xs sm:text-sm font-semibold hover:cursor-pointer z-10 tracking-tight sm:tracking-wider py-1 sm:py-2 px-2 sm:px-4 border border-stone-600 absolute top-[7px] sm:top-[5px] right-2 sm:right-5 rounded-full">
+            <div className=" text-xs sm:text-sm font-semibold hover:cursor-pointer z-10 tracking-tight sm:tracking-wider py-1 sm:py-2 px-2 sm:px-4 border border-stone-600 absolute hover:bg-col1 hover:text-white hover:border-none top-[7px] sm:top-[5px] right-2 sm:right-5 rounded-full">
               Subscribe
             </div>
           </div>
