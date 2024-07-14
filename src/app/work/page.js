@@ -9,8 +9,8 @@ const page = () => {
   return (
     <div className=" overflow-x-hidden relative">
       <div className="h-screen w-full relative">
-        <div className="h-full -z-50 absolute top-0 left-0">
-          <video className="h-screen w-screen object-cover" autoPlay muted loop>
+        <div className="h-full -z-50 absolute top-0 md:left-0 -left-60">
+          <video className="md:w-[100dvw] h-[100dvh] object-cover" autoPlay muted loop>
             <source src="/work_top_video.mp4" type="video/mp4" />
           </video>
         </div>

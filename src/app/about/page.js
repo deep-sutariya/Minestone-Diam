@@ -10,10 +10,10 @@ const Page = () => {
   return (
     <div className="relative">
       <div className="h-screen w-full relative">
-        <div className="h-full -z-50 absolute top-0 left-0">
+        <div className="h-full -z-50 absolute top-0 -left-96 md:left-0 inset-0">
           <video
             id="about-bg-video"
-            className="h-screen w-screen object-cover"
+            className="md:w-[100dvw] h-[100dvh] object-cover"
             autoPlay
             muted
             loop
@@ -61,7 +61,7 @@ const Page = () => {
 
         <div className="overflow-x-hidden">
           <AboutusComponents
-            src='/History.png'
+            src='/History.jpg'
             x="100"
             bgCol="bg-offwhite"
             heading="History"
@@ -83,7 +83,7 @@ const Page = () => {
             fontCol="text-offwhite"
             bgCol="bg-[#252525]"
             heading="Philosophy"
-            details="At Minestone Diam, we believe in the transformative power of diamonds. We are driven by a core philosophy that emphasizes the importance of hard work, ethics, and trust. Diamonds are a symbol of purity, transparency, and everlasting value, and these principles are reflected in every aspect of our business. We are guided by a spirit of altruism and utilitarianism, striving to create value and well-being for all our stakeholders, including our employees, partners, and the communities we touch. This commitment to ethical and sustainable practices has fueled our growth and positioned us as a leader in the diamond industry."
+            details="At Minestone Diam, we embrace the transformative essence of diamonds. Our core values—hard work, ethics, and trust—underpin everything we do. Diamonds symbolize purity, transparency, and enduring value, qualities that define our business philosophy. Guided by altruism and utilitarianism, we aim to enhance the well-being of all stakeholders: employees, partners, and communities. Our commitment to ethical practices drives our growth and leadership in the diamond industry."
             />
 
           <AboutusComponents

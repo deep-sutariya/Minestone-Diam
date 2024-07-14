@@ -32,7 +32,7 @@ const AboutusComponents = ({
             <h1 className="font-heading text-lg md:text-2xl lg:text-4xl font-semibold tracking-wider">
               {heading}
             </h1>
-            <p className=" tracking-tighter md:tracking-tight text-left font-basic text-xs lg:text-lg">{details}</p>
+            <p className=" tracking-tighter md:tracking-tight font-basic text-[11px] lg:text-lg text-justify">{details}</p>
           </div>
         </div>
       </TranslateFragment>
