@@ -15,7 +15,7 @@ const page = () => {
           </video>
         </div>
 
-        <div className="flex flex-col gap-y-6 pt-[53vh] sm:pt-80 text-white w-full sm:w-1/2 pl-6 sm:pl-24 bg-transparent backdrop-blur-sm">
+        <div className="flex flex-col gap-y-6 pt-[53vh] sm:pt-72 text-white w-full sm:w-1/2 pl-6 sm:pl-24 bg-transparent backdrop-blur-sm">
           <div className="flex flex-col justify-start items-start gap-y-1 font-heading tracking-wider text-3xl lg:text-6xl ">
             <h1 className=" z-50">Explore Brilliance with Minestone Diam</h1>
           </div>

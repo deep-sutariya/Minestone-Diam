@@ -4,14 +4,14 @@ import TranslateFragment from './Animations/TranslateFragment'
 import Link from 'next/link'
 import FadeFragment from './Animations/FadeFragment'
 
-const AffiliationCard = ({ name, des, src, x, y, link }) => {
+const AffiliationCard = ({ name, des, src, x, y, link, classNames }) => {
     return (
         <FadeFragment>
             <div className=" w-[95%] sm:w-[75%] mx-auto py-4 px-1 lg:p-3 xl:p-5 bg-offwhite flex flex-col gap-y-2 hover:scale-105 hover:cursor-pointer duration-200 rounded-xl">
                 <Link href={link} className=' hover:cursor-pointer'>
                     <div className='w-full h-20 md:h-24 lg:h-24 xl:h-32'>
                         <Image
-                            className=" w-full h-20 md:h-24 lg:h-24 xl:h-32"
+                            className={classNames}
                             src={src}
                             width={500}
                             height={500}
