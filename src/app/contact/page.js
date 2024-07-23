@@ -28,7 +28,7 @@ const page = () => {
             </div>
           </div> */}
 
-      <div className=" px-5 pt-10 pb-20 md:pt-20 md:pb-5 md:px-24 lg:px-56">
+      <div className=" px-5 pt-10 pb-20 md:pt-12 md:pb-5 md:px-24 lg:px-56">
         <FadeFragment>
           <div className=" flex flex-col gap-y-10 lg:gap-y-16">
             <div className="w-full items-center flex flex-col gap-y-4 lg:gap-y-8 ">
@@ -58,8 +58,8 @@ const page = () => {
                 details="DhanShree, Bambavadi, Tunki, Patel Nagar, Surat, Gujarat, 395004"
               />
               <ContactCard
-                type="Branch"
-                details="Bandra Kurla Complex, BDB, Mumbai, Maharashtra, 400051"
+                type="Other Location"
+                details="BDB, Bandra Kurla Complex, Mumbai, Maharashtra, 400051"
               />
             </div>
           </FadeFragment>

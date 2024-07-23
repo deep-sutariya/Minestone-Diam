@@ -1,6 +1,7 @@
 export const RequierdValidation = (values) => {
   if (values.name == "") return {msg:"Name is Requierd", val:-1};
-  if (values.email == "") return {msg:"Email is Requierd", val:-1};
+  if (values.email == "") return {msg:"Email is Requierd", val:-1}
+  else if(!EmailValidator(values.email)) return {msg:"Email is not valid", val:-1}
   if (values.company == "") return {msg:"Company name is Requierd", val:-1};
   if (values.message == "") return {msg:"Message is Requierd", val:-1};
   return {msg:"", val:1}

@@ -46,12 +46,12 @@ const Navbar = () => {
             />
           </Link>
         </div>
-        <ul className="md:flex gap-x-4 lg:gap-x-10 hidden md:visible ">
+        <ul className="md:flex gap-x-4 lg:gap-x-10 hidden md:visible duration-200">
           {NavData.map((data, ind) => {
             return (
               <li
                 key={ind}
-                className="cursor-pointer font-bold tracking-widest uppercase font-heading text-base lg:text-lg list-none outline-none hover:font-extrabold hover:scale-110 duration-150"
+                className={`cursor-pointer font-bold tracking-widest uppercase font-heading text-base lg:text-lg list-none outline-none hover:font-extrabold hover:scale-110 duration-150 ${path==data.link ? "border-b-2 border-col1" : ""}`}
               >
                 <Link href={data.link}>{data.name}</Link>
               </li>
@@ -92,7 +92,7 @@ const Navbar = () => {
                     <li
                       onClick={ToggleMenu}
                       key={ind}
-                      className={`drop-shadow-xl font-bold p-1 cursor-pointer text-center tracking-widest uppercase font-heading list-none duration-150 hover:scale-110 hover:font-extrabold`}
+                      className={`drop-shadow-xl font-bold p-1 cursor-pointer text-center tracking-widest uppercase font-heading list-none duration-150 hover:scale-110 hover:font-extrabold ${path==data.link ? "border-b border-col1" : ""}`}
                     >
                       <Link href={data.link}>{data.name}</Link>
                     </li>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -21,7 +22,14 @@ const ContactCard = ({ type, details }) => {
           {type}
         </div>
         <div className=" text-sm md:text-lg font-extrabold lg:tracking-wider">
-          {details}
+          {
+            (type == "Email" || type == "Call") ?
+              <Link href={`${type == "Email" ? "mailto:minestonediam@gmail.com" : type == "Call" ? "tel:+919328349312" : ""} `}>
+                {details}
+              </Link>
+              :
+              `${details}`
+          }
         </div>
       </div>
     </div>

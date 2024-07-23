@@ -14,6 +14,7 @@ const ContactForm = () => {
   });
 
   const [error, setError] = useState();
+  const [loading, setLoading] = useState(false);
 
   const clearForm = () => {
     values.name = "";
@@ -34,30 +35,26 @@ const ContactForm = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
+    setLoading(true)
 
     const { msg, val } = RequierdValidation(values);
     if (val == -1) {
       showErroBg();
       setError(msg);
-    } else if (EmailValidator(values.email)) {
-
+    } else {
       try {
         const data = await axios.post("/api/message", values);
         if (data?.status === 200) {
           alert(data?.data)
           setError("");
-          showErroBg(0);
+          showErroBg();
           clearForm();
         }
-
       } catch (e) {
         console.log("Error Sending Message", e);
       }
-
-    } else {
-      showErroBg(1);
-      setError("Email is not valid!");
     }
+    setLoading(false)
   };
 
   return (
@@ -120,7 +117,7 @@ const ContactForm = () => {
         onClick={submitForm}
         className="py-2 px-5 sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-[#252525] w-fit hover:bg-col1 hover:font-bold"
       >
-        Send us
+        {loading ? <div className="px-5"><div className=" border-orange-300 border-t-4 animate-spin h-6 w-6 rounded-full"></div></div> : "Send Us"}
       </div>
     </div>
   );
