@@ -3,7 +3,7 @@ import AffiliationCard from "./AffiliationCard";
 const Affiliations = () => {
   return (
     <div className=" w-full bg-[#252525] flex flex-col lg:px-5 pt-10 pb-16 md:px-2 md:py-20  md:gap-y-10 justify-center items-center text-offwhite">
-      <h1 className=" text-2xl md:text-4xl lg:text-5xl uppercase font-heading text-[#f0c200] tracking-wider">Affiliations</h1>
+      <h1 className=" text-3xl md:text-4xl lg:text-5xl uppercase font-heading text-[#f0c200] tracking-wider">Affiliations</h1>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-1 sm:gap-x-0 px-1 mt-9 w-[80%] md:w-[90%]'>
         <AffiliationCard
           link="https://gjepc.org/"
