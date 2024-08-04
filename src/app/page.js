@@ -8,7 +8,7 @@ import Affiliations from '@/components/Affiliations';
 export default function Home() {
   return (
     <div className=' relative overflow-x-clip' >
-      <div className=" bg-offwhite h-[calc(100dvh)] w-full flex flex-row items-end md:items-normal md:gap-x-5 overflow-x-clip">
+      <div className=" bg-offwhite h-[calc(100vh)] w-full flex flex-row items-end md:items-normal md:gap-x-5 overflow-x-clip">
         <div className=" mb-20 md:mt-28 w-[100%] sm:w-2/3 md:w-[56%] px-6 sm:px-5 md:px-10 lg:pl-20 lg:pr-0 pt-16 pb-6 sm:py-16 md:py-24 flex flex-col sm:justify-end md:justify-normal gap-y-3 sm:gap-y-6">
           <div className=" text-[#252525] flex flex-col justify-start items-start gap-y-1 lg:gap-y-4 font-heading text-3xl lg:text-5xl 2xl:text-6xl">
             <h1>Luxuriate in <span className=' text-[#CF9038] font-semibold'>Boldness</span></h1>

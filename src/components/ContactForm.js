@@ -115,7 +115,7 @@ const ContactForm = () => {
 
       <div
         onClick={submitForm}
-        className="py-2 px-5 sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-[#252525] w-fit hover:bg-col1 hover:font-bold"
+        className="py-2 px-5 text-xs md:text-base sm:px-7 tracking-wide sm:font-semibold text-white cursor-pointer rounded-full bg-[#252525] w-fit hover:bg-col1 hover:font-bold"
       >
         {loading ? <div className="px-5"><div className=" border-orange-300 border-t-4 animate-spin h-6 w-6 rounded-full"></div></div> : "Send Us"}
       </div>

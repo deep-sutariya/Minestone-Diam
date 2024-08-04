@@ -81,7 +81,7 @@ const Page = () => {
             src='/Philosophy.jpg'
             x="100"
             fontCol=""
-            bgCol="bg-[#f2f2f2]"
+            bgCol="bg-[#dcd9d8]"
             heading="Philosophy"
             details="At Minestone Diam, we embrace the transformative essence of diamonds. Our core values—hard work, ethics, and trust—underpin everything we do. Diamonds symbolize purity, transparency, and enduring value, qualities that define our business philosophy. Guided by altruism and utilitarianism, we aim to enhance the well-being of all stakeholders: employees, partners, and communities. Our commitment to ethical practices drives our growth and leadership in the diamond industry."
             />

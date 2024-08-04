@@ -13,7 +13,7 @@ const page = () => {
     <div className=" overflow-x-hidden relative">
       <div className="h-screen w-full relative">
         <div className="h-full -z-50 absolute -top-1 -left-1 -bottom-1 -right-1 inset-0">
-          <video className=" w-[101vw] h-[101vh] object-cover blur-[2px]" autoPlay muted loop>
+          <video className=" w-[102vw] h-[102vh] object-cover blur-[2px]" autoPlay muted loop>
             <source src="/whyus_top_video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -139,7 +139,7 @@ const page = () => {
               whyUsCard="true"
               x="100"
               fontCol=""
-              bgCol="bg-[#f2f2f2]"
+              bgCol="bg-[#dcd9d8]"
               heading="Heritage and Skill:"
               details="Our roots in Kathiawad, Gujarat, have instilled a deep appreciation for the art of diamond craftsmanship. We seamlessly blend traditional practices with modern technologies, ensuring you receive not just a diamond but a piece of our enduring legacy."
             />
@@ -161,7 +161,7 @@ const page = () => {
               bgCol="bg-white"
               heading="Trustworthy Relationships:"
               details="Building trust is at the heart of everything we do. We foster open communication, ensuring you feel confident and informed throughout your diamond-buying journey. Your trust is our most valuable asset."
-            />
+              />
 
             <AboutusComponents
               src='/Tailored_Services.jpg'
@@ -169,7 +169,7 @@ const page = () => {
               x="-100"
               pos="flex-row-reverse"
               fontCol=""
-              bgCol="bg-[#f2f2f2]"
+              bgCol="bg-[#dcd9d8]"
               heading="Tailored Service:"
               details="We go beyond simply offering diamonds. We offer personalized service, understanding that each client has unique preferences. Our team is dedicated to fulfilling your vision, whether you seek a bespoke design or expert advice on."
             />
