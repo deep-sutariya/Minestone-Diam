@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <nav className="z-50 absolute top-0 right-0 w-full bg-transparent">
       <div
-        className={`w-full flex justify-between items-center px-5 md:px-10 lg:px-20 py-6 ${path == "/" ? "text-detail" : path == "/contact" /*|| path == "/admin" */ ? "text-detail" : "text-offwhite"
+        className={`w-full flex justify-between items-center px-5 md:px-10 lg:px-20 py-6 ${path == "/" || path=="/privacy-policy" || path=="/terms-conditions" || path=="/code-of-conduct" ? "text-detail" : path == "/contact" /*|| path == "/admin" */ ? "text-detail" : "text-offwhite"
           }`}
       >
         <div className=" drop-shadow-xl">

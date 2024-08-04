@@ -20,25 +20,25 @@ const DiamShape = () => {
           heading="Trust and Security."
           detail="Buy high-quality diamonds with excellent cut and polish. Benefit from stringent quality control within a secure environment, ensuring robust security backed by industry authorities."
           direction=""
-          CubeLogo="/features_1.jpg"
+          CubeLogo="/features_1_1.jpg"
         />
         <DiamShapeCard
           heading="Effortless Buying."
           detail="Enjoy a seamless wholesale diamond buying experience that offers a variety of flexible payment methods tailored for your convenience."
           direction=""
-          CubeLogo="/features_4.jpg"
+          CubeLogo="/features_2_1.jpg"
         />
         <DiamShapeCard
           heading="Global Access."
           detail="Explore our extensive network that spans various countries, providing you access to a vast selection of different diamond mines and varieties meeting all your diverse requirements."
           direction=""
-          CubeLogo="/features_3.jpg"
+          CubeLogo="/features_3_1.jpg"
         />
         <DiamShapeCard
           heading="Diamond Emporium."
           detail="Experience quick and easy purchases with integrated shipping and invoicing designed to streamline buying process and ensure a smooth and efficient transaction every time."
           direction=""
-          CubeLogo="/features_2.jpg"
+          CubeLogo="/features_4_1.jpg"
         />
       </div>
 

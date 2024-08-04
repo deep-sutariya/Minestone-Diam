@@ -13,7 +13,7 @@ const page = () => {
     <div className=" overflow-x-hidden relative">
       <div className="h-screen w-full relative">
         <div className="h-full -z-50 absolute -top-1 -left-1 -bottom-1 -right-1 inset-0">
-          <video className=" w-[101dvw] h-[101dvh] object-cover blur-[2px]" autoPlay muted loop>
+          <video className=" w-[101vw] h-[101vh] object-cover blur-[2px]" autoPlay muted loop>
             <source src="/whyus_top_video.mp4" type="video/mp4" />
           </video>
         </div>

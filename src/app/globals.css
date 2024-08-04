@@ -143,11 +143,13 @@ body::-webkit-scrollbar {
     width: 10px;
     background-color: transparent;
 }
+
 body::-webkit-scrollbar-track {
     /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
-    background-color: transparent;   
+    background-color: transparent;
     display: none;
 }
+
 body::-webkit-scrollbar-thumb {
     box-shadow: inset 0 0 10px 10px gray;
     border: solid 1px transparent;
@@ -174,6 +176,10 @@ body::-webkit-scrollbar-thumb {
     background-clip: padding-box;
 }
 
-.grad{
+.grad {
     background: radial-gradient(closest-side, #747474, #3E3E3E, #252525);
+}
+
+.shade-bg {
+    background: linear-gradient(to top, #FFFFFF 20%, rgba(252, 252, 252, 0.9) 30%, rgba(252, 252, 252, 0.8) 35%, transparent 60%);
 }

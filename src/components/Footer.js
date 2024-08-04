@@ -27,7 +27,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="col-span-0 lg:col-span-2 flex flex-col gap-y-3 mx-auto">
+      <div className="col-span-0 lg:col-span-2 flex flex-col gap-y-3 mx-auto pb-4 md:pb-0">
         <h1 className=" font-heading font-semibold text-base sm:text-xl tracking-wider">Our Policies</h1>
         <ul className=" flex flex-col gap-y-1 ">
           <Link href="/privacy-policy" className=" text-xs sm:text-base hover:underline">
@@ -38,9 +38,6 @@ const Footer = () => {
           </Link>
           <Link href="/code-of-conduct" className="text-xs sm:text-base hover:underline">
             Code of Conduct
-          </Link>
-          <Link href="/blog" className="text-xs sm:text-base hover:underline">
-            Blog
           </Link>
         </ul>
       </div>

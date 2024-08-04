@@ -13,7 +13,7 @@ const Page = () => {
         <div className="h-full -z-50 absolute top-0 -left-96 md:left-0 inset-0">
           <video
             id="about-bg-video"
-            className="md:w-[100dvw] h-[100dvh] object-cover"
+            className="md:w-[100vw] h-[100vh] object-cover"
             autoPlay
             muted
             loop
