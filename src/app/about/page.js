@@ -27,7 +27,7 @@ const Page = () => {
             <h1>About Us</h1>
           </div>
           <p className=" w-11/12 sm:w-11/12 font-basic text-sm md:text-lg text-left">
-            Minestone Diam is a well-established diamond partnership firm in
+            Minestone Diam is a well-established diamond manufacturing and trading firm in
             Surat, Gujarat, India, with a presence in BDB Mumbai. We boast over
             three decades of experience in the diamond industry, officially
             registering as a firm in 2016. Our success is built on a solid

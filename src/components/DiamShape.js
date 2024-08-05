@@ -17,25 +17,25 @@ const DiamShape = () => {
       {/* <div className='grid grid-cols-7 sm:grid-cols-5 gap-x-3 md:gap-x-6 mt-5 w-full'> */}
       <div className=' flex overflow-x-scroll gap-x-3 sm:gap-x-6 sm:px-5 mt-9 w-[95%] md:w-4/5 sc'>
         <DiamShapeCard
-          heading="Trust and Security."
+          heading="Trust and Security"
           detail="Buy high-quality diamonds with excellent cut and polish. Benefit from stringent quality control within a secure environment, ensuring robust security backed by industry authorities."
           direction=""
           CubeLogo="/features_1_1.jpg"
         />
         <DiamShapeCard
-          heading="Effortless Buying."
+          heading="Effortless Buying"
           detail="Enjoy a seamless wholesale diamond buying experience that offers a variety of flexible payment methods tailored for your convenience."
           direction=""
           CubeLogo="/features_2_1.jpg"
         />
         <DiamShapeCard
-          heading="Global Access."
+          heading="Global Access"
           detail="Explore our extensive network that spans various countries, providing you access to a vast selection of different diamond mines and varieties meeting all your diverse requirements."
           direction=""
           CubeLogo="/features_3_1.jpg"
         />
         <DiamShapeCard
-          heading="Diamond Emporium."
+          heading="Diamond Emporium"
           detail="Experience quick and easy purchases with integrated shipping and invoicing designed to streamline buying process and ensure a smooth and efficient transaction every time."
           direction=""
           CubeLogo="/features_4_1.jpg"
