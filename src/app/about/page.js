@@ -74,7 +74,7 @@ const Page = () => {
             pos="flex-row-reverse"
             bgCol="bg-white"
             heading="Team"
-            details="Minestone Diam is led by a team of six dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 100 skilled individuals ensures efficient operations and the highest quality standards."
+            details="Minestone Diam is led by a team of six dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 200 skilled individuals ensures efficient operations and the highest quality standards."
             />
 
           <AboutusComponents
@@ -83,7 +83,7 @@ const Page = () => {
             fontCol=""
             bgCol="bg-[#dcd9d8]"
             heading="Philosophy"
-            details="At Minestone Diam, we embrace the transformative essence of diamonds. Our core values—hard work, ethics, and trust—underpin everything we do. Diamonds symbolize purity, transparency, and enduring value, qualities that define our business philosophy. Guided by altruism and utilitarianism, we aim to enhance the well-being of all stakeholders: employees, partners, and communities. Our commitment to ethical practices drives our growth and leadership in the diamond industry."
+            details="At Minestone Diam, we embrace the transformative essence of diamonds. Our core values, hard work, ethics, and trust, underpin everything we do. Diamonds symbolize purity, transparency, and enduring value, qualities that define our business philosophy. Guided by altruism and utilitarianism, we aim to enhance the well-being of all stakeholders: employees, partners, and communities. Our commitment to ethical practices drives our growth and leadership in the diamond industry."
             />
 
           <AboutusComponents
