@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 import AboutusComponents from "@/components/AboutusComponents";
 import ScrollHook from "@/utils/ScrollHook";
+import Image from "next/image";
+import TeamCard from "@/components/TeamCard";
+const TeamImg = require('../../../public/Team.jpg')
 
 const Page = () => {
   const scrollYProgress = ScrollHook();
@@ -39,7 +42,7 @@ const Page = () => {
 
       <div className=" relative">
         <motion.div
-          className=" rounded-full bg-orange-400 absolute left-[15px] w-[6px] lg:left-[58px] lg:w-[10px]"
+          className=" rounded-t-full bg-orange-400 absolute left-[15px] w-[6px] lg:left-[58px] lg:w-[10px]"
           style={{
             scaleY: scrollYProgress,
             transformOrigin: "top",
@@ -66,34 +69,59 @@ const Page = () => {
             bgCol="bg-offwhite"
             heading="History"
             details="Our story begins in Kathiawad, Gujarat, where generations of our family have honed their expertise in the diamond trade. This legacy of craftsmanship passed down from our grandparents, who meticulously worked in diamond factories, forms the core of our company's values and practices. We are forever grateful for their dedication and the enduring legacy they entrusted to us."
-            />
+          />
 
           <AboutusComponents
+            src='/Philosophy.jpg'
+            x="-100"
+            pos="flex-row-reverse"
+            fontCol=""
+            bgCol="bg-[#dcd9d8]"
+            heading="Philosophy"
+            details="At Minestone Diam, we embrace the transformative essence of diamonds. Our core values, hard work, ethics, and trust, underpin everything we do. Diamonds symbolize purity, transparency, and enduring value, qualities that define our business philosophy. Guided by altruism and utilitarianism, we aim to enhance the well-being of all stakeholders: employees, partners, and communities. Our commitment to ethical practices drives our growth and leadership in the diamond industry."
+          />
+
+          <AboutusComponents
+            src='/Vision.jpeg'
+            x="100"
+            bgCol="bg-white"
+            heading="Vision"
+            details="Our vision is to be a global leader in providing ethically sourced, sustainable diamonds at an accessible price point. We aim to minimize diamond waste while maximizing customer satisfaction, ensuring that the brilliance of our diamonds is matched only by the joy they bring."
+          />
+
+          {/* <AboutusComponents
             src='/Team.jpg'
             x="-100"
             pos="flex-row-reverse"
             bgCol="bg-white"
             heading="Team"
             details="Minestone Diam is led by a team of six dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 200 skilled individuals ensures efficient operations and the highest quality standards."
-            />
+          /> */}
+        </div>
 
-          <AboutusComponents
-            src='/Philosophy.jpg'
-            x="100"
-            fontCol=""
-            bgCol="bg-[#dcd9d8]"
-            heading="Philosophy"
-            details="At Minestone Diam, we embrace the transformative essence of diamonds. Our core values, hard work, ethics, and trust, underpin everything we do. Diamonds symbolize purity, transparency, and enduring value, qualities that define our business philosophy. Guided by altruism and utilitarianism, we aim to enhance the well-being of all stakeholders: employees, partners, and communities. Our commitment to ethical practices drives our growth and leadership in the diamond industry."
-            />
-
-          <AboutusComponents
-            src='/Vision.jpeg'
-            x="-100"
-            pos="flex-row-reverse"
-            bgCol="bg-white"
-            heading="Vision"
-            details="Our vision is to be a global leader in providing ethically sourced, sustainable diamonds at an accessible price point. We aim to minimize diamond waste while maximizing customer satisfaction, ensuring that the brilliance of our diamonds is matched only by the joy they bring."
-          />
+        <div className="flex relative items-start duration-150" >
+          <div className=" w-full h-[50vh] md:h-[68vh] mx-auto">
+            <Image className='absolute top-0 left-0 -z-50 w-full h-[68vh] opacity-70 object-cover blur-[5px]' src={TeamImg} width={5000} height={5000} alt="image" />
+            <div className="absolute flex flex-col gap-y-5 items-start pb-5 pl-10 pr-6 sm:px-10 md:px-20 lg:px-32 xl:px-60 py-10 mt-5">
+              <h1 className=" text-lg md:text-2xl lg:text-4xl tracking-wide font-semibold font-heading text-[#252525] backdrop-blur-sm">
+                Meet The Team
+              </h1>
+              <h1 className=" tracking-tighter md:tracking-tight font-basic text-[11px] lg:text-lg text-[#252525] text-justify backdrop-blur-sm">
+                Minestone Diam is led by a team of six dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 200 skilled individuals ensures efficient operations and the highest quality standards.
+              </h1>
+              <div className="flex flex-col items-center justify-center mx-auto gap-y-3 md:gap-y-5 mt-6">
+                <div className="flex gap-3 md:gap-5">
+                  <TeamCard name="Paresh S Moradiya" role="Director" />
+                  <TeamCard name="Bharat S Moradiya" role="Chief Sales Officer" />
+                  <TeamCard name="Keval D Moradiya" role="Chief Operations Officer" />
+                </div>
+                <div className="flex gap-3 md:gap-5">
+                  <TeamCard name="Pragnesh D Moradiya" role="Head Finance Manager" />
+                  <TeamCard name="Ankit V Moradiya" role="Head Accounts Manager" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
