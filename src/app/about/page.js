@@ -103,10 +103,10 @@ const Page = () => {
           <div className=" w-full h-[50vh] md:h-[68vh] mx-auto">
             <Image className='absolute top-0 left-0 -z-50 w-full h-[68vh] opacity-70 object-cover blur-[5px]' src={TeamImg} width={5000} height={5000} alt="image" />
             <div className="absolute flex flex-col gap-y-5 items-start pb-5 pl-10 pr-6 sm:px-10 md:px-20 lg:px-32 xl:px-60 py-10 mt-5">
-              <h1 className=" text-lg md:text-2xl lg:text-4xl tracking-wide font-semibold font-heading text-[#252525] backdrop-blur-sm">
+              <h1 className=" text-lg md:text-2xl lg:text-4xl tracking-wide font-semibold font-heading text-center text-[#252525] backdrop-blur-sm w-full">
                 Meet The Team
               </h1>
-              <h1 className=" tracking-tighter md:tracking-tight font-basic text-[11px] lg:text-lg text-[#252525] text-justify backdrop-blur-sm">
+              <h1 className=" mx-auto tracking-tighter md:tracking-tight font-basic text-[11px] lg:text-lg text-[#252525] text-center backdrop-blur-sm w-full">
                 Minestone Diam is led by a team of dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 200 skilled individuals ensures efficient operations and the highest quality standards.
               </h1>
               <div className="flex flex-col items-center justify-center mx-auto gap-y-3 md:gap-y-5 mt-6">

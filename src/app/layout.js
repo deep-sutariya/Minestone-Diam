@@ -4,8 +4,9 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Minestone Diam",
-  description: "Minestone Diam",
+  title: "Home | Minestone Diam",
+  description: "Explore Minestone Diam, your trusted partner in ethically sourced diamonds.",
+  keywords: "Minestone Diam, Minesotne, diamonds, surat diamonds",
 };
 
 export default function RootLayout({ children }) {

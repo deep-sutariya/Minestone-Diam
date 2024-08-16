@@ -52,7 +52,7 @@ const page = () => {
           <FadeFragment>
             <div className="w-full grid grid-cols-2 md:flex gap-y-5 justify-between gap-x-5 px-2 md:px-16 lg:px-60 py-4 lg:py-8 ">
               <ContactCard type="Call" details="+91 93283 49312" />
-              <ContactCard type="Email" details="minestonediam@gmail.com" />
+              <ContactCard type="Email" details="info@minestonediam.com" />
               <ContactCard
                 type="HQ"
                 details="DhanShree, Bambavadi, Tunki, Patel Nagar, Surat, Gujarat, 395004"
