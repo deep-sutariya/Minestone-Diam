@@ -4,9 +4,19 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Home | Minestone Diam",
-  description: "Explore Minestone Diam, your trusted partner in ethically sourced diamonds.",
-  keywords: "Minestone Diam, Minesotne, diamonds, surat diamonds",
+  metadataBase: new URL('https://www.minestonediam.com'),
+  title: {
+    template: '%s | Minestone Diam',
+    default: 'Minestone Diam',
+  },
+  keywords: [
+    'Minestone Diam', , 'diamonds', 'ethical diamonds', 'sustainable diamonds',
+    'diamond sourcing', 'diamond industry', 'Surat diamonds',
+    'quality diamonds', 'trusted diamond partner', 'diamond trade'
+  ],
+  openGraph: {
+    description: 'Explore Minestone Diam, your trusted partner in ethically sourced diamonds.',
+  }
 };
 
 export default function RootLayout({ children }) {

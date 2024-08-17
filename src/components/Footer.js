@@ -8,7 +8,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className=" bg-offwhite pb-10 sm:py-12 px-4 sm:px-16 grid items-center md:items-start grid-cols-2 grid-rows-2 lg:grid-cols-8 lg:grid-rows-1">
+    <footer className=" bg-offwhite pb-10 sm:py-12 px-4 sm:px-16 grid items-center md:items-start grid-cols-2 grid-rows-2 lg:grid-cols-8 lg:grid-rows-1 relative">
       <div className="col-span-0 lg:col-span-2 flex flex-col gap-y-3 mx-auto">
         <h1 className=" font-heading font-semibold text-base sm:text-xl tracking-wider">Our Company</h1>
         <ul className=" flex flex-col gap-y-1">
@@ -66,6 +66,9 @@ const Footer = () => {
             <FaInstagramSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
           </div>
         </div>
+      </div>
+      <div className=" absolute bottom-1 left-0 w-full text-center">
+        <h1 className=" font-heading">Copyright © 2024 Minestonediam®. All rights reserved.</h1>
       </div>
     </footer>
   );
