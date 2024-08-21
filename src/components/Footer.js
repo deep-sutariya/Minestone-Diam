@@ -42,7 +42,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="col-span-2 px-3 lg:pl-10 row-span-2 lg:col-span-4 flex flex-col justify-center gap-y-5 mx-auto">
+      <div className="col-span-2 px-1 lg:pl-10 row-span-2 lg:col-span-4 flex flex-col justify-center gap-y-5 mx-auto">
         <h1 className=" font-heading font-semibold text-base sm:text-xl tracking-wider text-justify ">
           We offer periodic updates about our research and development. Be among
           the select first few to receive all such news & more!
@@ -57,18 +57,21 @@ const Footer = () => {
               Subscribe
             </div>
           </div>
-          <div className=" flex gap-x-2 md:gap-x-4 mt-3">
-            <Link href="https://www.linkedin.com/company/minestonediam/">
-              <FaLinkedin className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
-            </Link>
-            <FaSquareXTwitter className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
-            <FaFacebookSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
-            <FaInstagramSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+          <div className=" flex justify-between items-center mt-3">
+            <div className=" flex gap-x-2 md:gap-x-4">
+              <Link href="https://www.linkedin.com/company/minestonediam/">
+                <FaLinkedin className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+              </Link>
+              <FaSquareXTwitter className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+              <FaFacebookSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+              <FaInstagramSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
+            </div>
+            <div className="text-xs md:text-base font-heading flex flex-col md:flex-row gap-x-1">
+              <h1>Copyright © 2024 Minestonediam®.</h1>
+              <h1 className=" text-end">All rights reserved.</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div className=" absolute bottom-1 left-0 w-full text-center">
-        <h1 className=" font-heading">Copyright © 2024 Minestonediam®. All rights reserved.</h1>
       </div>
     </footer>
   );

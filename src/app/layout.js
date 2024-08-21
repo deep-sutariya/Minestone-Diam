@@ -7,7 +7,7 @@ export const metadata = {
   metadataBase: new URL('https://www.minestonediam.com'),
   title: {
     template: '%s | Minestone Diam',
-    default: 'Minestone Diam',
+    default: '',
   },
   keywords: [
     'Minestone Diam', , 'diamonds', 'ethical diamonds', 'sustainable diamonds',

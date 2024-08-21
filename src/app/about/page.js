@@ -3,7 +3,7 @@ import AboutPage from "@/components/AboutPage";
 export const metadata = {
   metadataBase: new URL('https://www.minestonediam.com'),
   title: {
-    template: '%s | Minestone Diam',
+    template: '%s',
     default: 'About Us | Minestone Diam',
   },
   keywords: [
