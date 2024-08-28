@@ -16,6 +16,7 @@ const AffiliationCard = ({ name, des, src, x, y, link, classNames }) => {
                             width={1500}
                             height={1500}
                             alt={src}
+                            onContextMenu={(e) => e.preventDefault()}
                         />
                     </div>
                     {/* <div className='flex flex-col gap-y-1 xl:gap-y-3'>

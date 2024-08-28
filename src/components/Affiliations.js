@@ -8,7 +8,7 @@ const Affiliations = () => {
         <AffiliationCard
           link="https://gjepc.org/"
           y={-100}
-          classNames="w-full h-24 md:h-24 lg:h-24 xl:h-32"
+          classNames="w-full h-24 md:h-24 lg:h-24 xl:h-32 noDrag"
           src="/Affiliation_gjepc.png"
           name="GJEPC(Gem & Jewellery Export Promotion Council)"
           des="Explore the vibrant world of gemstones and jewelry with GJEPC, a premier organization driving India's gem and jewelry exports. Discover exquisite craftsmanship, innovative designs, and a rich heritage that shines through every piece."
@@ -16,7 +16,7 @@ const Affiliations = () => {
         <AffiliationCard
           link="https://www.odc.co.bw/"
           y={-100}
-          classNames="w-full h-24 md:h-24 lg:h-24 xl:h-32"
+          classNames="w-full h-24 md:h-24 lg:h-24 xl:h-32 noDrag"
           src="/Affiliation_okavango.png"
           name="ODC(Okavango Diamond Company)"
           des="Delve into the fascinating realm of diamonds with ODC, Botswana's leading diamond trading company. Experience the allure of responsibly sourced diamonds, each reflecting the natural beauty and brilliance of the Okavango region."
@@ -24,7 +24,7 @@ const Affiliations = () => {
         <AffiliationCard
           link="https://bdbindia.org/"
           y={100}
-          classNames="w-full h-28 md:h-24 xl:h-28 pb-5 px-6 md:px-4 md:pb-0 md:pt-3"
+          classNames="w-full h-28 md:h-24 xl:h-28 pb-5 px-6 md:px-4 md:pb-0 md:pt-3 noDrag"
           src="/Affiliation_BDB.png"
           name="BDB(Bharat Diamond Bourse)"
           des="Delve into the fascinating realm of diamonds with ODC, Botswana's leading diamond trading company. Experience the allure of responsibly sourced diamonds, each reflecting the natural beauty and brilliance of the Okavango region."

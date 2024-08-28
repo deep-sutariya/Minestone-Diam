@@ -6,7 +6,7 @@ const DiamShape = () => {
   return (
     <div className='flex flex-col justify-center items-center pt-10 pb-24 bg-white relative z-20'>
       <div className=' w-full h-1/2 px-5 sm:px-10 md:px-20 lg:px-40 xl:px-72'>
-        <Image src='/Shapes.svg' width={1200} height={500} alt='img' />
+        <Image className="noDrag" src='/Shapes.svg' width={1200} height={500} alt='img' onContextMenu={(e) => e.preventDefault()}/>
       </div>
       <div className=' px-5 sm:px-10 md:px-20 lg:px-40 xl:px-72 flex flex-col gap-y-6 sm:gap-4 md:gap-8 text-lg font-basic py-6'>
         <h1 className='text-2xl sm:text-3xl lg:text-5xl font-heading'>Why should one join Minestone Diam?</h1>

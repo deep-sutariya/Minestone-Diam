@@ -37,12 +37,13 @@ const Navbar = () => {
         <div className=" drop-shadow-xl">
           <Link href="/">
             <Image
-              className=" drop-shadow-sm w-20 h-20 md:w-32 md:h-32"
+              className=" drop-shadow-sm w-20 h-20 md:w-32 md:h-32 noDrag"
               src="/Logo.png"
               width={1000}
               height={1000}
               priority="true"
               alt="logo"
+              onContextMenu={(e) => e.preventDefault()}
             />
           </Link>
         </div>
