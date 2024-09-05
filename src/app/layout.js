@@ -11,13 +11,14 @@ export const metadata = {
     default: 'Minestone Diam',
   },
   keywords: [
-    'Minestone Diam', , 'diamonds', 'ethical diamonds', 'sustainable diamonds',
+    'Minestone Diam', 'Mine stone diam', 'diamonds', 'ethical diamonds', 'sustainable diamonds',
     'diamond sourcing', 'diamond industry', 'Surat diamonds',
     'quality diamonds', 'trusted diamond partner', 'diamond trade'
   ],
   openGraph: {
     title: 'Minestone Diam',
     description: 'Explore Minestone Diam, your trusted partner in ethically sourced diamonds.',
+    url: 'https://www.minestonediam.com',
     images: [
       {
         url: '/Logo.png',
@@ -33,6 +34,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta property="og:site_name" content="Minestone Diam" />
       <body className=" relative scroll-smooth antialiased">
         <CursorCircle />
 

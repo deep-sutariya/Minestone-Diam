@@ -12,6 +12,8 @@ export const metadata = {
     'trusted diamond partner', 'diamond sourcing', 'diamond trade'
   ],
   openGraph: {
+    title: "whyus",
+    url: 'https://www.minestonediam.com/whyus',
     description: 'Understand why Minestone Diam stands out in the diamond industry with our commitment to quality and ethics.',
   }
 };

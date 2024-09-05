@@ -5,7 +5,11 @@ export const metadata = {
     template: '%s | Minestone Diam',
     default: 'Contact Us | Minestone Diam',
   },
-  description: 'Get in touch with Minestone Diam for inquiries about our products and services.',
+  penGraph: {
+    title: "contact",
+    url: 'https://www.minestonediam.com/contact',
+    description: 'Get in touch with Minestone Diam for inquiries about our products and services.',
+  },
   keywords: [
     'Minestone Diam', 'contact Minestone', 'diamond inquiries', 
     'diamond services', 'Surat diamonds', 'diamond industry',

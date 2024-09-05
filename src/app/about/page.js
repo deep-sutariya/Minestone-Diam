@@ -12,7 +12,9 @@ export const metadata = {
     'diamond trade', 'Surat diamonds', 'trusted diamond partner'
   ],
   openGraph:{
+    title: "about",
     description: 'Discover the heritage and ethical practices of Minestone Diam in the diamond industry.',
+    url: 'https://www.minestonediam.com/about',
   }
 };
 
