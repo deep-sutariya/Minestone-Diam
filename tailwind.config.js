@@ -7,6 +7,16 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'move-bg': {
+          '0%': { backgroundPosition: '0% -50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% -50%' },
+        },
+      },
+      animation: {
+        'move-bg': 'move-bg 10s ease-in-out infinite',
+      },
       colors:{
         offwhite:"#F2F0F8",
         hover: "#E9E9E9",
