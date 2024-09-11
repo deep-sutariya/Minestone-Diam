@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className=" bg-offwhite pb-10 sm:py-12 px-4 sm:px-16 grid items-center md:items-start grid-cols-2 grid-rows-2 lg:grid-cols-8 lg:grid-rows-1 relative">
       <div className="col-span-0 lg:col-span-2 flex flex-col gap-y-3 mx-auto">
@@ -67,7 +68,7 @@ const Footer = () => {
               <FaInstagramSquare className=" hover:opacity-85 w-6 h-6 sm:w-8 sm:h-8 opacity-75 hover:cursor-pointer" />
             </div>
             <div className="text-xs md:text-base font-heading font-basic flex flex-col md:flex-row gap-x-1">
-              <h1>Copyright © 2024 Minestonediam®.</h1>
+              <h1>Copyright © {year} Minestonediam®.</h1>
               <h1 className=" text-end">All rights reserved.</h1>
             </div>
           </div>

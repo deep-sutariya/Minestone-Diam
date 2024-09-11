@@ -14,7 +14,7 @@ export default function Home() {
             <h1>Luxuriate in <span className=' text-[#CF9038] font-semibold'>Boldness</span></h1>
             <h1>Trust the <span className=' text-[#CF9038] font-semibold'>Brilliance</span></h1>
           </div>
-          <p className=" w-full font-basic text-detail text-sm md:text-lg lg:text-lg xl:text-xl text-left">We emphasize the peace of mind of owning a diamond-backed by trust and transparency. Minestone Diam uses state-of-the-art tech to help diamond jewellers, retailers and buyers experience growth like never before. A sustainable & user friendly solution to source the best quality diamonds at the best price, scale up profits, expand business horizons, and grow exponentially.</p>
+          <p className=" w-full font-basic text-detail text-sm md:text-lg lg:text-lg xl:text-xl text-left">We emphasize the peace of mind of owning a diamond-backed by trust and transparency. Minestone Diam uses state of the art tech to help diamond jewellers, retailers and buyers experience growth like never before. A sustainable & user friendly solution to source the best quality diamonds at the best price, scale up profits, expand business horizons, and grow exponentially.</p>
         </div>
 
         <div className=' absolute top-8 -right-[340px] sm:top-0 sm:-right-[320px] md:top-16 md:-right-[520px] lg:top-16 lg:-right-[620px] z-10 w-fit h-min'>
