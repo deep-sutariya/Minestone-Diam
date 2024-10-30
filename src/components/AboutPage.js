@@ -107,7 +107,7 @@ const AboutPage = () => {
                 Meet The Team
               </h1>
               <h1 className=" mx-auto tracking-tighter md:tracking-tight font-basic text-[11px] lg:text-lg text-[#252525] text-center backdrop-blur-sm w-full">
-                Minestone Diam is led by a team of dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 200 skilled individuals ensures efficient operations and the highest quality standards.
+                Minestone Diam is led by a team of dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 500 skilled individuals ensures efficient operations and the highest quality standards.
               </h1>
               <div className="flex flex-col items-center justify-center mx-auto gap-y-3 md:gap-y-5 mt-6">
                 <div className="flex gap-3 md:gap-5">
