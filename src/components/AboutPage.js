@@ -111,13 +111,14 @@ const AboutPage = () => {
               </h1>
               <div className="flex flex-col items-center justify-center mx-auto gap-y-3 md:gap-y-5 mt-6">
                 <div className="flex gap-3 md:gap-5">
-                  <TeamCard name="Paresh S Moradiya" role="Director" />
-                  <TeamCard name="Bharat S Moradiya" role="Chief Executive Officer" />
-                  <TeamCard name="Keval D Moradiya" role="Chief Operations Officer" />
+                  <TeamCard name="Paresh S Moradiya" role="Partner" />
+                  <TeamCard name="Bharat S Moradiya" role="Partner" />
+                  <TeamCard name="Keval D Moradiya" role="Partner" />
                 </div>
                 <div className="flex gap-3 md:gap-5">
-                  <TeamCard name="Pragnesh D Moradiya" role="Head Finance Manager" />
-                  <TeamCard name="Ankit V Moradiya" role="Head Accounts Manager" />
+                  <TeamCard name="Pragnesh D Moradiya" role="Partner" />
+                  <TeamCard name="Ankit V Moradiya" role="Partner" />
+                  <TeamCard name="Bakul B Savani" role="Partner" />
                 </div>
               </div>
             </div>
