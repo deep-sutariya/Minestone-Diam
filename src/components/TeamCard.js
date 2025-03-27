@@ -2,7 +2,7 @@ import TranslateFragment from "./Animations/TranslateFragment"
 
 const TeamCard = ({ name, surname, role }) => {
     return (
-        <div className="flex-1 min-w-[250px] max-w-[300px] h-[130px] duration-150">
+        <div className="flex-1 min-w-[100px] max-w-[130px] h-[130px] lg:min-w-[250px] lg:max-w-[300px] lg:h-[130px] duration-150">
             <TranslateFragment y="100">
                 <div className="flex flex-col gap-y-4 px-2 md:px-8 text-center py-2 md:py-4 border backdrop-blur-md hover:scale-105 duration-150 cursor-pointer h-full overflow-hidden">
                     <div className="flex flex-col justify-center items-center"> 
