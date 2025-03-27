@@ -100,7 +100,7 @@ const AboutPage = () => {
         </div>
 
         <div className="flex relative items-start duration-150" >
-          <div className=" w-full h-[80vh] md:h-[80vh] mx-auto">
+          <div className=" w-full h-[70vh] md:h-[80vh] mx-auto">
             <Image className='absolute top-0 left-0 -z-50 w-full h-[80vh] opacity-70 object-cover blur-[5px]' src={TeamImg} width={5000} height={5000} alt="image" />
             <div className="absolute flex flex-col gap-y-5 items-start pb-5 pl-10 pr-6 sm:px-10 md:px-20 lg:px-32 xl:px-60 py-10 mt-5">
               <h1 className=" text-lg md:text-2xl lg:text-4xl tracking-wide font-semibold font-heading text-center text-[#252525] backdrop-blur-sm w-full">
