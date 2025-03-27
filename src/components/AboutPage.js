@@ -110,12 +110,12 @@ const AboutPage = () => {
                 Minestone Diam is led by a team of dedicated partners, each with unique skills and responsibilities. Together, they oversee the entire diamond lifecycle, from procurement and human resource management to marketing, sales, and global sourcing of the finest rough diamonds. Our on-site workforce of over 500 skilled individuals ensures efficient operations and the highest quality standards.
               </h1>
               <div className="flex flex-col items-center justify-center mx-auto gap-y-3 md:gap-y-5 mt-6">
-                <div className="flex gap-3 md:gap-5">
+                <div className="flex gap-3 md:gap-5 w-full">
                   <TeamCard name="Paresh S Moradiya" role="Partner" />
                   <TeamCard name="Bharat S Moradiya" role="Partner" />
                   <TeamCard name="Keval D Moradiya" role="Partner" />
                 </div>
-                <div className="flex gap-3 md:gap-5">
+                <div className="flex gap-3 md:gap-5 w-full">
                   <TeamCard name="Pragnesh D Moradiya" role="Partner" />
                   <TeamCard name="Ankit V Moradiya" role="Partner" />
                   <TeamCard name="Bakul B Savani" role="Partner" />
