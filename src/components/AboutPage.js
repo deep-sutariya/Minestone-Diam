@@ -118,7 +118,7 @@ const AboutPage = () => {
                 <div className="flex gap-3 md:gap-5 w-full">
                   <TeamCard name="Pragnesh D" surname="Moradiya" role="Partner" />
                   <TeamCard name="Ankit V" surname="Moradiya" role="Partner" />
-                  <TeamCard name="Bakul B" surname="Moradiya" role="Partner" />
+                  <TeamCard name="Bakul B" surname="Savani" role="Partner" />
                 </div>
               </div>
             </div>
