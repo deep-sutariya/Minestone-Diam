@@ -10,7 +10,7 @@ const ContactCard = ({ type, details }) => {
     >
       <div className="">
         {type == "Call" ? (
-          <Link href="tel:+919328349312">
+          <Link href="tel:+919967506406">
             <div className=" bg-gray-800 hover:bg-col1 p-2 md:p-3 lg:p-4 text-white rounded-full cursor-pointer">
               <FiPhoneCall className=" w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8" />
             </div>
