@@ -37,7 +37,7 @@ const ContactPage = () => {
                 details="DhanShree, Bambavadi, Tunki, Patel Nagar, Surat, Gujarat, 395004"
               />
               <ContactCard
-                type="Other Location"
+                type="Sales Team"
                 details="BDB, Bandra Kurla Complex, Mumbai, Maharashtra, 400051"
               />
             </div>
