@@ -1,5 +1,6 @@
 import Image from "next/image";
 import TranslateFragment from "./Animations/TranslateFragment";
+import FadeFragment from "./Animations/FadeFragment";
 
 const AboutusComponents = ({
   bgCol,
@@ -17,7 +18,8 @@ const AboutusComponents = ({
     <div
       className={`${bgCol}`}
     >
-      <TranslateFragment x={xpos}>
+      {/* <TranslateFragment x={xpos}> */}
+      <FadeFragment>
         <div className={`w-full pl-10 pr-5 md:pl-32 md:pr-20 ${whyUsCard=="true" ? "py-10" : "py-10 md:py-16 lg:py-20"} lg:px-32 flex justify-center items-center gap-x-4 lg:gap-x-5 ${pos}`}>
           <div className=" min-h-full w-[40%] md:w-full ">
             <Image
@@ -36,7 +38,8 @@ const AboutusComponents = ({
             <p className=" tracking-tighter md:tracking-tight font-basic text-[11px] lg:text-lg text-justify">{details}</p>
           </div>
         </div>
-      </TranslateFragment>
+      </FadeFragment>
+      {/* </TranslateFragment> */}
     </div>
   );
 };
