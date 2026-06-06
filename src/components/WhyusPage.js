@@ -12,7 +12,7 @@ const WhyusPage = () => {
       <div className="h-screen w-full relative">
         <div className="h-full -z-50 absolute -top-1 -left-1 -bottom-1 -right-1 inset-0">
           <video className=" w-[102vw] h-[102vh] object-cover blur-[1px]" autoPlay muted loop>
-            <source src="/whyus_top_video.mp4" type="video/mp4" />
+            <source src="/whyus_top_video1.mp4" type="video/mp4" />
           </video>
         </div>
 
